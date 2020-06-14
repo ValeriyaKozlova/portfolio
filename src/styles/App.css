@@ -1,0 +1,66 @@
+@import 'grid.css';
+@import 'media.css';
+@import url('https://fonts.googleapis.com/css2?family=Lora&display=swap');
+
+body {
+  background: linear-gradient(90deg, #2A1B3D 50%, #44318D 50%);
+  font-size: 1.2rem;
+  font-family: 'Lora', serif
+}
+body h1 {
+  text-transform: uppercase;
+  /* margin: 30px; */
+}
+/* .main {
+  margin-left: 30px;
+} */
+.Navigation {
+  display: flex;
+  flex-direction: column;
+  background-color: #2A1B3D;
+}
+.Navigation a {
+  color: #D93F87;
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin: 10px 10px;
+  text-decoration: none;
+  transition: all .3s;
+}
+.Navigation a:hover {
+  color: #A4B3B6
+}
+.Navigation .active-link{
+  color: white;
+}
+.col-10 {
+  background-color: #44318D;
+  min-height: 100vh;
+  color: white;
+  border-left: 2px solid #8265A7;
+  padding-left: 30px;
+}
+
+.About img {
+  width: 100%;
+}
+
+.About-imgContainer {
+ position: absolute;
+ min-height: 100%;
+}
+
+.About-imgContainer::before {
+ position: absolute;
+  content: "";
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  background-color: rgba(68,49,141,.3);
+
+}
+
+.activeImage {
+  width: 60px;
+}

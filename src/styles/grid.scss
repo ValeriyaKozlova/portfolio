@@ -1,0 +1,71 @@
+section {
+    padding: 50px 30px;
+}
+
+.container, %container {
+    display: grid;
+    position: relative;
+    width: 100%;
+    max-width: 350px;
+    margin: auto;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 15px;
+    grid-row-gap: 10px;
+    align-items: center;
+    // 1 = 1, 2 3 4 5 6 = 2, 7 8 9 = 3, 10 11 12 = 4;
+    & .col-1 {
+        position: relative;
+        grid-column: span 1;
+        width: 100%;
+    }
+    & .col-2, .col-3, .col-4, .col-5, .col-6 {
+        position: relative;
+        grid-column: span 2;
+        width: 100%;
+    }
+    & .col-7, .col-8, .col-9 {
+        position: relative;
+        grid-column: span 3;
+        width: 100%;
+    }
+    & .col-10, .col-11, .col-12 {
+        position: relative;
+        grid-column: span 4;
+        width: 100%;
+    }
+    &.newLessonQuiz {
+        grid-template-columns: 20px 20px 1fr auto;
+    }
+    &.section{
+        grid-template-columns: 20px 1fr 20px 20px;
+        padding: 0 20px;
+    }
+    &.newSection{
+        grid-template-columns: 20px 1fr auto;
+    }
+    &.video{
+        grid-template-columns: 20px 1fr;
+    }
+    &.select {
+        grid-template-columns: 20px 1fr;
+        grid-gap: 0px;
+    }
+    &.lessonInfo {
+        grid-template-columns: 1fr 3fr 1fr 2fr 1fr;
+        grid-gap: 0px;
+    }
+    &.inputLoginForm {
+        grid-template-columns: auto 1fr;
+    }
+}
+
+.container-fluid {
+    @extend %container;
+    max-width: 1800px;
+}
+
+.main,
+.main-container{
+    min-height: 100%;
+}
+

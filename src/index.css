@@ -1,7 +1,7 @@
 body {
-  /* background: linear-gradient(90deg, #8860D0 50%, #C1C8E4 50%); */
+  /* background: linear-gradient(90deg, var(--background-color) 50%, var(--dark-color) 50%); */
   margin: 0;
-  background: #E3AFBC;
+  background: var(--background-color);
   font-size: 1.2rem;
   font-family: 'Lora', serif;
   color: white;

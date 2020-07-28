@@ -4,7 +4,8 @@ section, article {
 
 .container, %container768 {
     max-width: 1400px;
-    grid-gap: 30px;
+    grid-gap: 0px;
+    // grid-gap: 30px;
     grid-row-gap: 0px;
     grid-template-columns: repeat(12, 1fr);
     & .col-1 {

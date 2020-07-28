@@ -1,60 +1,56 @@
-import React, {useState} from 'react'
-import { NavHashLink as NavLink } from 'react-router-hash-link';
+import React, { useState } from "react";
+import { NavLink } from "react-router-dom";
 
 function Navbar() {
-    const [active, setActive] = useState("about");
-    
-    return (
-        <div className="container-fluid Navigation">
-        <nav className="container Navigation" id="navbar">
-          {/* <a href="#about">About</a> */}
-        <NavLink
-          to="/#about"
-          activeClassName="selected"
-        //   onClick={() => setActive("about")}
-        >
-        About
-        </NavLink>
-        <NavLink
-          activeClassName="selected"
-          to="/#education"
-        //   onClick={() => setActive("education")}
-        >
-            {/* {active === "education" ? <img src={ActiveArrow} alt="arrow right" className="activeImage"/> : "Education"} */}
-            Education && Experience
-        </NavLink>
-        <NavLink
-          activeClassName="selected"
-          to="/#skills"
-        //   onClick={() => setActive("skills")}
-        >
-           {/* {active === "skills" ? <img src={ActiveArrow} alt="arrow right" className="activeImage"/> : "Skills"} */}
-           Skills
-        </NavLink>
-        <NavLink
-          activeClassName="selected"
-          to="/#projects"
-        //   onClick={() => setActive("projects")}
-        >
-          {/* {active === "projects" ? <img src={ActiveArrow} alt="arrow right" className="activeImage"/> : "Projects"} */}
-          Projects
-        </NavLink>
-        <NavLink
-          activeClassName="selected"
-          to="/#contacts"
-        //   onClick={() => setActive("projects")}
-        >
-          {/* {active === "projects" ? <img src={ActiveArrow} alt="arrow right" className="activeImage"/> : "Projects"} */}
-          Contacts
-        </NavLink>
-        <div className="buttons">
+  return (
+    <div className="navbar">
+      <div className="buttons">
         <button>EN</button>
         <button>FR</button>
         <button>RU</button>
-        </div>
-        </nav>
       </div>
-    )
+      <nav className="Navigation" id="navbar">
+        <NavLink to="/about" activeClassName="active-link">
+          About
+        </NavLink>
+        <NavLink activeClassName="active-link" to="/education-experience">
+          Education && Experience
+        </NavLink>
+        <NavLink activeClassName="active-link" to="/skills">
+          Skills
+        </NavLink>
+        <NavLink activeClassName="active-link" to="/projects">
+          Projects
+        </NavLink>
+      </nav>
+      <div className="contact">
+        <a
+          href="https://www.facebook.com/valeriya.kozlova.73"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          f
+        </a>
+        <a
+          href="https://www.linkedin.com/in/valeriya-kozlova-v/"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          in
+        </a>
+        <a
+          href="https://github.com/ValeriyaKozlova"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          git
+        </a>
+        {/* <a className="email" href="mailto: kozlova.valeriya.v@gmail.com">
+          kozlova.valeriya.v@gmail.com
+        </a> */}
+      </div>
+    </div>
+  );
 }
 
-export default Navbar
+export default Navbar;

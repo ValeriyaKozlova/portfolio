@@ -1,20 +1,28 @@
-import React, { useState } from "react";
+import React from "react";
 import { NavLink } from "react-router-dom";
 
-function Navbar() {
+function Navbar({activeLangue, setActiveLangue}) {
   return (
     <div className="navbar">
-      <div className="buttons">
-        <button>EN</button>
-        <button>FR</button>
-        <button>RU</button>
+      <div>
+        <button
+        className={activeLangue === "en" ? "activeLangue" : ""}
+        onClick={() => setActiveLangue('en')}
+        >EN</button>
+        <button
+        className={activeLangue === "fr" ? "activeLangue" : ""}
+        onClick={() => setActiveLangue('fr')}
+        >FR</button>
+        <button
+        className={activeLangue === "ru" ? "activeLangue" : ""}
+        onClick={() => setActiveLangue('ru')}>RU</button>
       </div>
       <nav className="Navigation" id="navbar">
         <NavLink to="/about" activeClassName="active-link">
           About
         </NavLink>
         <NavLink activeClassName="active-link" to="/education-experience">
-          Education && Experience
+          Edu. && EX
         </NavLink>
         <NavLink activeClassName="active-link" to="/skills">
           Skills

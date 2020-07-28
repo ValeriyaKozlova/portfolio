@@ -2,7 +2,7 @@ import React from 'react'
 
 const Projects = () => {
     return (
-        <section className="col-12 section projects" id="projects">
+        <section className="col-12 section projects">
             <h1>Projects</h1>
             <div className="col-6"></div>
             <div className="col-4"><a href="https://www.a6k.be/home/" target="_blank" rel="noopener noreferrer">a6k</a></div>

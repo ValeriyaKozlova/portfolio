@@ -42,44 +42,6 @@ section {
   width: 100%;
 }
 
-.container.newLessonQuiz, .newLessonQuiz.container-fluid {
-  -ms-grid-columns: 20px 20px 1fr auto;
-      grid-template-columns: 20px 20px 1fr auto;
-}
-
-.container.section, .section.container-fluid {
-  -ms-grid-columns: 20px 1fr 20px 20px;
-      grid-template-columns: 20px 1fr 20px 20px;
-  padding: 0 20px;
-}
-
-.container.newSection, .newSection.container-fluid {
-  -ms-grid-columns: 20px 1fr auto;
-      grid-template-columns: 20px 1fr auto;
-}
-
-.container.video, .video.container-fluid {
-  -ms-grid-columns: 20px 1fr;
-      grid-template-columns: 20px 1fr;
-}
-
-.container.select, .select.container-fluid {
-  -ms-grid-columns: 20px 1fr;
-      grid-template-columns: 20px 1fr;
-  grid-gap: 0px;
-}
-
-.container.lessonInfo, .lessonInfo.container-fluid {
-  -ms-grid-columns: 1fr 3fr 1fr 2fr 1fr;
-      grid-template-columns: 1fr 3fr 1fr 2fr 1fr;
-  grid-gap: 0px;
-}
-
-.container.inputLoginForm, .inputLoginForm.container-fluid {
-  -ms-grid-columns: auto 1fr;
-      grid-template-columns: auto 1fr;
-}
-
 .container-fluid {
   max-width: 1800px;
 }

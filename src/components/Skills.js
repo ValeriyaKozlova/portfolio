@@ -8,14 +8,14 @@ import materialize from '../images/materializelogo.png'
 
 function Skills() {
     return (
-      <section className="col-12 section skills" id="skills">
+      <section className="col-12 container section skills">
         <h1 className="col-12">Skills</h1>
-        <div className="col-4"><img src={bootstrap} alt="bootstrap logo"/></div>
-        <div className="col-4"><img src={css} alt="css logo"/></div>
-        <div className="col-4"><img src={gitlogo} alt="git logo"/></div>
-        <div className="col-4"><img src={html} alt="html logo"/></div>
-        <div className="col-4"><img src={js} alt="js logo"/></div>
+        <div className="col-3"><img src={css} alt="css logo"/></div>
+        <div className="col-3"><img src={html} alt="html logo"/></div>
+        <div className="col-3"><img src={js} alt="js logo"/></div>
+        <div className="col-3"><img src={bootstrap} alt="bootstrap logo"/></div>
         <div className="col-4"><img src={materialize} alt="materialize logo"/></div>
+        <div className="col-4"><img src={gitlogo} alt="git logo"/></div>
         <div className="col-4"><img src="" alt=""/></div>
         <div className="col-4"><img src="" alt=""/></div>
         <div className="col-4"><img src="" alt=""/></div>

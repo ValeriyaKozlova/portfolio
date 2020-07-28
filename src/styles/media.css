@@ -5,7 +5,7 @@ section, article {
 .container, .container-fluid {
   max-width: 1400px;
   grid-gap: 30px;
-  grid-row-gap: 20px;
+  grid-row-gap: 0px;
   -ms-grid-columns: (1fr)[12];
       grid-template-columns: repeat(12, 1fr);
 }

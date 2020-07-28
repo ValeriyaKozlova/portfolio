@@ -5,7 +5,7 @@ section, article {
 .container, %container768 {
     max-width: 1400px;
     grid-gap: 30px;
-    grid-row-gap: 20px;
+    grid-row-gap: 0px;
     grid-template-columns: repeat(12, 1fr);
     & .col-1 {
         grid-column: span 1;

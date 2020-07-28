@@ -8,7 +8,7 @@ import materialize from '../images/materializelogo.png'
 
 function Skills() {
     return (
-      <div className="Skills container col-10">
+      <section className="col-12 section skills" id="skills">
         <h1 className="col-12">Skills</h1>
         <div className="col-4"><img src={bootstrap} alt="bootstrap logo"/></div>
         <div className="col-4"><img src={css} alt="css logo"/></div>
@@ -22,7 +22,7 @@ function Skills() {
         <div className="col-4"><img src="" alt=""/></div>
         <div className="col-4"><img src="" alt=""/></div>
         <div className="col-4"><img src="" alt=""/></div>
-      </div>
+      </section>
     );
   }
   

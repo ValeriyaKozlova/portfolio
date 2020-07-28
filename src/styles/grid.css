@@ -12,7 +12,7 @@ section {
   -ms-grid-columns: (1fr)[4];
       grid-template-columns: repeat(4, 1fr);
   grid-gap: 15px;
-  grid-row-gap: 10px;
+  grid-row-gap: 0px;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -84,8 +84,9 @@ section {
   max-width: 1800px;
 }
 
-.main,
-.main-container {
-  min-height: 100%;
+.main {
+  min-height: 90vh;
+  padding-left: 20px;
+  padding-right: 20px;
 }
 /*# sourceMappingURL=grid.css.map */

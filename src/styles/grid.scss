@@ -10,7 +10,7 @@ section {
     margin: auto;
     grid-template-columns: repeat(4, 1fr);
     grid-gap: 15px;
-    grid-row-gap: 10px;
+    grid-row-gap: 0px;
     align-items: center;
     // 1 = 1, 2 3 4 5 6 = 2, 7 8 9 = 3, 10 11 12 = 4;
     & .col-1 {
@@ -63,9 +63,3 @@ section {
     @extend %container;
     max-width: 1800px;
 }
-
-.main,
-.main-container{
-    min-height: 100%;
-}
-

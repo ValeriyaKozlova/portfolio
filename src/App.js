@@ -1,7 +1,6 @@
 import React, { useState } from "react";
 import {Switch, Route} from 'react-router-dom'
 import Education from "./components/Education";
-import Skills from "./components/Skills";
 import Projects from "./components/Projects";
 import About from "./components/About";
 import "./styles/App.css";
@@ -21,7 +20,6 @@ function App() {
     <Switch>
       <Route exact path="/about" component={() => <About activeLangue={activeLangue}/>} />
       <Route exact path="/education-experience" component={() => <Education activeLangue={activeLangue}/>} />
-      <Route exact path="/skills" component={() => <Skills activeLangue={activeLangue}/>} />
       <Route exact path="/projects" component={() => <Projects activeLangue={activeLangue}/>} />
     </Switch>
     </main>

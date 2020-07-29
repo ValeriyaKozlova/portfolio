@@ -2,7 +2,7 @@ import React from "react";
 
 const Education = () => {
   return (
-    <section className="col-12 section education">
+    <section className="col-12 education">
       <h1>Education && Experience</h1>
       <div className="message">
         <p id="message">

@@ -24,9 +24,6 @@ function Navbar({activeLangue, setActiveLangue}) {
         <NavLink activeClassName="active-link" to="/education-experience">
           Edu. && EX
         </NavLink>
-        <NavLink activeClassName="active-link" to="/skills">
-          Skills
-        </NavLink>
         <NavLink activeClassName="active-link" to="/projects">
           Projects
         </NavLink>

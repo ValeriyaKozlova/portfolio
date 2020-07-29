@@ -92,9 +92,22 @@ button:focus{
 .about{
   min-height: calc(100vh - 20px);
 }
-/* .skills img{
-width: 50px;
-} */
+
+.devTools {
+  margin-top: 4rem;
+}
+.about ul {
+  list-style-type: none;
+  display: flex;
+  width: 40%;
+  padding-left: 0;
+}
+.about ul li {
+  margin: 5px 10px;
+  font-size: 2rem;
+  font-weight: bold;
+  color: var(--light-color)
+}
 .col-10 {
   border-left: 2px solid var(--complimentary-color);
   padding-left: 30px;
@@ -178,6 +191,18 @@ width: 50px;
     transform: translateY(0px);
     opacity: 1;
   }
+}
+
+ .projects {
+ grid-column-gap: 20px;
+ grid-row-gap: 20px;
+}
+.projects .col-6 {
+  text-align: center;
+}
+.projects img {
+  width: 350px;
+  filter: drop-shadow(1px 3px 4px var(--secondary-color));;
 }
 .contact{
   text-align: center;

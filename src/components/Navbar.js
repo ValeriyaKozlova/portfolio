@@ -1,6 +1,7 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
 import { LOCALES } from "../i18n";
+import translate from "../i18n/translate";
 
 function Navbar({activeLangue, setActiveLangue}) {
   return (
@@ -20,13 +21,13 @@ function Navbar({activeLangue, setActiveLangue}) {
       </div>
       <nav className="Navigation" id="navbar">
         <NavLink to="/about" activeClassName="active-link">
-          About
+          {translate('nav-about')}
         </NavLink>
         <NavLink activeClassName="active-link" to="/education-experience">
-          Edu. && EX
+        {translate('nav-exp')}
         </NavLink>
         <NavLink activeClassName="active-link" to="/projects">
-          Projects
+        {translate('nav-projects')}
         </NavLink>
       </nav>
       <div className="contact">
@@ -51,9 +52,10 @@ function Navbar({activeLangue, setActiveLangue}) {
         >
           git
         </a>
-        {/* <a className="email" href="mailto: kozlova.valeriya.v@gmail.com">
+        <a className="email" href="mailto: kozlova.valeriya.v@gmail.com">
           kozlova.valeriya.v@gmail.com
-        </a> */}
+        </a>
+        <a className="cv" href="/images/myw3schoolsimage.jpg" download>{translate('download')}</a>
       </div>
     </div>
   );

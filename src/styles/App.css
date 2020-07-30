@@ -79,8 +79,12 @@ button:hover,
   min-height: calc(100vh - 20px);
 }
 
-.devTools {
+.skills {
+  /* opacity: 0; */
   margin-top: 4rem;
+}
+.skills ul li {
+  color: var(--background-color);
 }
 .about ul {
   list-style-type: none;
@@ -138,6 +142,7 @@ button:hover,
   text-align: center;
   margin-bottom: 10px;
 }
+
 .contact a{
   font-size: 1.5rem;
   color: var(--secondary-color);
@@ -146,11 +151,14 @@ button:hover,
   margin: 5px;
   transition: all .2s;
 }
-
+.contact .cv {
+  font-size: 1.2rem;
+}
 .contact .email {
   display: block;
-  font-size: 1rem;
+  font-size: .8rem;
 }
+
 /* EDUCATION  */
 .message {
   padding: 10px;
@@ -222,6 +230,14 @@ button:hover,
 .img-container:hover {
   cursor: pointer;
 }
+
+.blooming {
+  background-color: white;
+}
+.blooming img{
+  width: 100%;
+  height: auto;
+}
 .projectInfo {
   position: absolute;
   top: 0;
@@ -234,6 +250,10 @@ button:hover,
   background-color: rgba(000, 000, 000, .8);
   color: var(--light-color);
   transition: all .5s;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
 }
 .projectInfo p {
   padding: 10px;

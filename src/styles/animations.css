@@ -20,7 +20,7 @@
   right: 0;
   background-color: var(--background-color);
   transform: scale(.5);
-  animation: .3s slideIn ease-in-out forwards, 1s skewBg ease-in-out;
+  animation: .1s slideIn ease-in-out forwards, 1s skewBg ease-in-out;
 }
 
 @keyframes skewBg {
@@ -186,4 +186,19 @@
   }
   .projectInfo button:hover a {
     color: var(--dark-color);
+  }
+
+  /* ANIMATION OF SKILLS */
+  .skills ul li  {
+    animation-name: skills;
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
+  }
+  @keyframes  skills {
+    0%{
+      color: var(--background-color);
+    }
+    100% {
+      color: var(--light-color);
+    }
   }

@@ -11,7 +11,7 @@ const About = () => {
         <h1> {translate("greeting-3")} </h1>
         <div className="overlay"></div>
       </div>
-      <div className="devTools">
+      <div className="skills">
         <ul>
           <li>JavaScript</li>
           <li>Reactjs</li>

@@ -1,12 +1,14 @@
 import React from "react";
-import MyPhoto from '../images/me.png'
-const About = ({activeLangue}) => {
+import MyPhoto from "../images/me.png";
+import translate from "../i18n/translate";
+
+const About = () => {
   return (
     <section className="col-12 about">
       <div className="animation">
-        <h1> {activeLangue === "en" ? "Hello!" : activeLangue === "fr" ? "Salut!" : "Привет"} </h1> 
-        <h1> {activeLangue === "en" ? "I am VALERIYA," : activeLangue === "fr" ? "Je suis Valeriya," : "Меня зовут Валерия,"} </h1>
-        <h1> {activeLangue === "en" ? "junior Web Developer" : activeLangue === "fr" ? "développeur web junior" : "младший веб разработчик"} </h1> 
+        <h1> {translate("greeting-1")} </h1>
+        <h1> {translate("greeting-2")} </h1>
+        <h1> {translate("greeting-3")} </h1>
         <div className="overlay"></div>
       </div>
       <div className="devTools">

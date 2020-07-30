@@ -1,41 +1,30 @@
 import React from "react";
+import translate from "../i18n/translate";
 
 const Education = () => {
   return (
     <section className="col-12 education">
-      <h1>Education && Experience</h1>
+      <h1>{translate("heading-education")}</h1>
       <div className="message">
-        <p id="message">
-          I have education and experience in the tourism field. But after moving
-          to Belgium in the end of 2017, I decided to change my professional
-          path verse Web Development. I am interested in everything that it
-          contains. In March 2020, I finished a Programmation course at BeCode.
-          Now I'm currently doing an internship at BloomingRiders. I love
-          JavaScript, and ReactJs is the main technology I work with.
-        </p>
+        <p id="message">{translate("message")}</p>
       </div>
       <div className="profPath">
         <div className="workContainer lightBox firstBox">
           <p>2019</p>
-          <p>Introduction to HTML, JavaScript, PHP.</p>
-          <p>Belgium</p>
+          <p>{translate('description-technofuture')} </p>
+          <p>{translate("country")}</p>
         </div>
         <div className="workContainer darkBox secondBox">
-          <p>September, 2019 - March, 2020</p>
-          <p>
-            7 months training in front-end development (HTML, CSS, Javascript),
-            back-end development (PHP, SQL, Adminer), systems administration
-            (Linux), project management. Self-learning, autonomy, team-work.
-          </p>
-          <p>Charleroi, Belgium</p>
+          <p>{translate("date-becode")}</p>
+          <p>{translate("description-becode")}</p>
+          <p>{translate("country-city")}</p>
         </div>
         <div className="workContainer lightBox thirdBox">
-          <p>April, 2020 - present time</p>
+          <p>{translate('date-blooming')} </p>
           <p>
-            Front-end development of the lms platform (reactJS, gatsbyJS,
-            nodeJS, Redis, SASS )
+            {translate('description-blooming')}
           </p>
-          <p>Belgium</p>
+          <p>{translate("country")}</p>
         </div>
         <div className="workContainer darkBox next">
           <h2>What's next?..</h2>

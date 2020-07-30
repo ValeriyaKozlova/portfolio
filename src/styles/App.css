@@ -259,6 +259,7 @@ button:hover,
 }
 
 .projectTitle {
+  color: var(--light-color);
   position: absolute;
   filter: none;
   width: 100%;

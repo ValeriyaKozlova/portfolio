@@ -1,5 +1,6 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
+import { LOCALES } from "../i18n";
 
 function Navbar({activeLangue, setActiveLangue}) {
   return (
@@ -7,15 +8,15 @@ function Navbar({activeLangue, setActiveLangue}) {
       <div>
         <button
         className={activeLangue === "en" ? "activeLangue" : ""}
-        onClick={() => setActiveLangue('en')}
+        onClick={() => setActiveLangue(LOCALES.ENGLISH)}
         >EN</button>
         <button
         className={activeLangue === "fr" ? "activeLangue" : ""}
-        onClick={() => setActiveLangue('fr')}
+        onClick={() => setActiveLangue(LOCALES.FRENCH)}
         >FR</button>
         <button
         className={activeLangue === "ru" ? "activeLangue" : ""}
-        onClick={() => setActiveLangue('ru')}>RU</button>
+        onClick={() => setActiveLangue(LOCALES.RUSSIAN)}>RU</button>
       </div>
       <nav className="Navigation" id="navbar">
         <NavLink to="/about" activeClassName="active-link">

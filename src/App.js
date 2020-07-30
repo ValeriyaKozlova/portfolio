@@ -1,29 +1,46 @@
 import React, { useState } from "react";
-import {Switch, Route} from 'react-router-dom'
+import { Switch, Route } from "react-router-dom";
 import Education from "./components/Education";
 import Projects from "./components/Projects";
 import About from "./components/About";
 import "./styles/App.css";
-import "./styles/animations.css"
+import "./styles/animations.css";
 import Navbar from "./components/Navbar";
-// import Contacts from './components/Contacts'
+import { I18nProvider, LOCALES } from "./i18n";
 
 function App() {
-  const [activeLangue, setActiveLangue] = useState('en')
+  const [activeLangue, setActiveLangue] = useState(LOCALES.ENGLISH);
 
   return (
-    <div className="container-fluid">
-      <div className="col-1">
-        <Navbar activeLangue={activeLangue} setActiveLangue={setActiveLangue} /> 
+    <I18nProvider locale={activeLangue}>
+      <div className="container-fluid">
+        <div className="col-1">
+          <Navbar
+            activeLangue={activeLangue}
+            setActiveLangue={setActiveLangue}
+          />
+        </div>
+        <main className="col-10">
+          <Switch>
+            <Route
+              exact
+              path="/about"
+              component={() => <About />}
+            />
+            <Route
+              exact
+              path="/education-experience"
+              component={() => <Education />}
+            />
+            <Route
+              exact
+              path="/projects"
+              component={() => <Projects />}
+            />
+          </Switch>
+        </main>
       </div>
-    <main className="col-10">
-    <Switch>
-      <Route exact path="/about" component={() => <About activeLangue={activeLangue}/>} />
-      <Route exact path="/education-experience" component={() => <Education activeLangue={activeLangue}/>} />
-      <Route exact path="/projects" component={() => <Projects activeLangue={activeLangue}/>} />
-    </Switch>
-    </main>
-    </div>
+    </I18nProvider>
   );
 }
 

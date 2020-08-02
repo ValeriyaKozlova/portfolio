@@ -202,3 +202,11 @@
       color: var(--light-color);
     }
   }
+
+  #Layer_1 {
+    animation: change_fill 5s;
+  }
+  @keyframes change_fill {
+    0% {fill: var(--background-color);}
+    100% {fill: var(--secondary-color);}
+  }

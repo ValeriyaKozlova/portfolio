@@ -1,0 +1,52 @@
+body {
+    font-size: 11px;
+}
+
+footer, header, .copyright {
+    display: none;
+}
+section:first-of-type {
+    margin-top: 0;
+    padding: 0;
+}
+
+
+section {
+    padding: 30px;
+    &.try-subscription {
+        display: none;
+    }
+    & .gift-container-wrapper {
+        display: none;
+    }
+    &.faq {
+        display: none;
+    }
+}
+
+.print-info {
+    display: grid;
+}
+
+
+.container {
+    max-width: initial;
+    & .col-8 {
+        &.col-md-offset-2 {
+            grid-column: span 12;
+        }
+    }
+}
+
+.no-print {
+    display: none;
+}
+
+.gift-levels {
+    & form {
+        & .discount-area {
+            padding: 15px;
+            font-size: .8em;
+        }
+    }
+}

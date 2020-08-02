@@ -1,8 +1,10 @@
 import React from "react";
 import MyPhoto from "../images/me.png";
 import translate from "../i18n/translate";
+import LogoAnimated from "./LogoAnimated";
 
 const About = () => {
+  
   return (
     <section className="col-12 about">
       <div className="animation">
@@ -30,7 +32,11 @@ const About = () => {
           <li>Figma</li>
         </ul>
       </div>
-      <img alt="myPhoto" className="absolute img" src={MyPhoto} />
+      <LogoAnimated />
+      <img alt="myPhoto" className="absolute img d-none d-lg-block" src={MyPhoto} />
+      <div>
+      <img alt="myPhoto" className="d-lg-none img-fluid photo" src={MyPhoto} />
+      </div>
     </section>
   );
 };

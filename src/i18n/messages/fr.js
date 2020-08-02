@@ -20,7 +20,7 @@ export default {
     "description-technofuture": "Introduction aux HTML, JavaScript, PHP",
     "date-blooming": "Avril, 2020 - jusqu'a présent",
     "description-blooming": "Développement front-end de la plateforme lms (reactJS, gatsbyJS, nodeJS, Redis, SASS)",
-    "a6k": "C'était un projet de groupe pendant mes études en BeCode. Lesite fonctionne déjà depuis un certain temps, mais il y a eu beaucoup de petits problèmes que nous avons résolus. Engénéral, j'ai travaillé avec JavaScript (créer des animations, réécrire certaines fonctions, analyser le code pour supprimer les fonctions inutilisées), mais comme le site a été créé avec WordPress, j'ai fait du code en PHP et utilisé certaines fonctionnalités de WordPress, MySQL, Adminer.",
+    "a6k": "C'était un projet de groupe pendant mes études. Le site fonctionne déjà depuis un certain temps, mais nous avons résolus beaucoup de petits problèmes. En général, j'ai travaillé avec JS (créer des animations, réécrire des fonctions, analyser le code pour supprimer les fonctions inutilisées), mais comme le site a été créé avec WordPress, j'ai fait du code en PHP et utilisé certaines fonctionnalités de WordPress, MySQL, Adminer.",
     "ancubator": "C'est mon premier projet personnel - un site très simple. Technologies: HTML, Bootstrap, Figma, Mailchimp",
     "admin-blooming": "J'ai réalisé ce projet lors de mon stage chez Blooming Riders. Nous avons créé la plate-forme LMS à partir de zéro. J'ai créé toutes les fonctionnalités frontales pour le panneau d'administration. Technologies: reactjs, gatsbyjs, redis, CSS, SASS, multi-services.",
     "blooming": "Je travaille sur ce projet en ce moment :) Technologies: reactjs, gatsbyjs, react-redux, redis, CSS, SASS.",

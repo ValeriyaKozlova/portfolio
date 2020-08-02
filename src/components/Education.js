@@ -4,7 +4,7 @@ import translate from "../i18n/translate";
 const Education = () => {
   return (
     <section className="col-12 education">
-      <h1>{translate("heading-education")}</h1>
+      <h1 className="d-none d-lg-block">{translate("heading-education")}</h1>
       <div className="message">
         <p id="message">{translate("message")}</p>
       </div>

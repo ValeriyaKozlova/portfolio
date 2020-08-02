@@ -2,35 +2,44 @@ import React from "react";
 import { NavLink } from "react-router-dom";
 import { LOCALES } from "../i18n";
 import translate from "../i18n/translate";
+import Logo from "./Logo";
 
-function Navbar({activeLangue, setActiveLangue}) {
+function Navbar({ activeLangue, setActiveLangue }) {
   return (
-    <div className="navbar">
-      <div>
+    <div className="navbar-nav">
+      <div className="buttons">
         <button
-        className={activeLangue === "en" ? "activeLangue" : ""}
-        onClick={() => setActiveLangue(LOCALES.ENGLISH)}
-        >EN</button>
+          className={activeLangue === "en" ? "activeLangue" : ""}
+          onClick={() => setActiveLangue(LOCALES.ENGLISH)}
+        >
+          EN
+        </button>
         <button
-        className={activeLangue === "fr" ? "activeLangue" : ""}
-        onClick={() => setActiveLangue(LOCALES.FRENCH)}
-        >FR</button>
+          className={activeLangue === "fr" ? "activeLangue" : ""}
+          onClick={() => setActiveLangue(LOCALES.FRENCH)}
+        >
+          FR
+        </button>
         <button
-        className={activeLangue === "ru" ? "activeLangue" : ""}
-        onClick={() => setActiveLangue(LOCALES.RUSSIAN)}>RU</button>
+          className={activeLangue === "ru" ? "activeLangue" : ""}
+          onClick={() => setActiveLangue(LOCALES.RUSSIAN)}
+        >
+          RU
+        </button>
+        <Logo />
       </div>
       <nav className="Navigation" id="navbar">
         <NavLink to="/about" activeClassName="active-link">
-          {translate('nav-about')}
+          {translate("nav-about")}
         </NavLink>
         <NavLink activeClassName="active-link" to="/education-experience">
-        {translate('nav-exp')}
+          {translate("nav-exp")}
         </NavLink>
         <NavLink activeClassName="active-link" to="/projects">
-        {translate('nav-projects')}
+          {translate("nav-projects")}
         </NavLink>
       </nav>
-      <div className="contact">
+      <div className="contact d-none d-lg-block">
         <a
           href="https://www.facebook.com/valeriya.kozlova.73"
           target="_blank"
@@ -55,7 +64,9 @@ function Navbar({activeLangue, setActiveLangue}) {
         <a className="email" href="mailto: kozlova.valeriya.v@gmail.com">
           kozlova.valeriya.v@gmail.com
         </a>
-        <a className="cv" href="/images/myw3schoolsimage.jpg" download>{translate('download')}</a>
+        <a className="cv" href="/images/myw3schoolsimage.jpg" download>
+          {translate("download")}
+        </a>
       </div>
     </div>
   );

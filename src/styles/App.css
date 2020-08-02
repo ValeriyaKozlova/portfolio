@@ -1,4 +1,4 @@
-@import 'grid.css';
+/* @import 'grid.css'; */
 @import 'media.css';
 @import url('https://fonts.googleapis.com/css2?family=Lora&display=swap');
 
@@ -10,6 +10,10 @@
   --dark-color: rgba(15, 22, 38, .7);
 }
 
+.logo-container {
+  text-align: center;
+  width: auto;
+}
 body h1 {
   text-transform: uppercase;
 }
@@ -18,11 +22,7 @@ body h1 {
   color: var(--complimentary-color);
 }
 
-section{
-  padding: 0 20px;
-}
-
-.navbar {
+.navbar-nav {
   display: flex;
   align-items: center;
   flex-direction: column;
@@ -36,6 +36,7 @@ section{
   align-items: center;
   transition: all .3s;
 }
+
 .buttons {
   display: flex;
   align-items: center;
@@ -47,7 +48,6 @@ button,
   text-transform: uppercase;
   font-size: 1.2rem;
   font-weight: 600;
-  margin: 10px 10px;
   text-decoration: none;
   transition: all .3s;
 }
@@ -79,8 +79,16 @@ button:hover,
   min-height: calc(100vh - 20px);
 }
 
+.svgContainer {
+  width: 40%;
+  text-align: center;
+}
+
+.logoAnimated {
+  width: 300px;
+}
+
 .skills {
-  /* opacity: 0; */
   margin-top: 4rem;
 }
 .skills ul li {
@@ -100,7 +108,6 @@ button:hover,
 }
 .col-10 {
   border-left: 2px solid var(--complimentary-color);
-  padding-left: 30px;
   min-height: 100vh;
   padding: 0 20px;
 }
@@ -211,7 +218,7 @@ button:hover,
   justify-content: left;
   margin: 10px;
 }
-.flex img {
+.img-container img {
   height: 100%;
   opacity: .8;
   transition: all .2s;
@@ -219,8 +226,9 @@ button:hover,
 }
 
 .img-container {
+  padding: 0;
   overflow: hidden;
-  margin: 30px;
+  margin: 30px 30px;
   width: 100%;
   height: 300px;
   box-shadow: 1px 1px 1px 2px var(--dark-color);
@@ -287,4 +295,45 @@ button:hover,
   text-align: center;
   font-size: 4rem;
   text-shadow: 1px 1px 2px rgba(000, 000, 000, .8);
+}
+
+
+@media (max-width: 800px) {
+  .about,
+  .navbar-nav {
+    min-height: auto;
+  }
+  .navbar-nav {
+    align-items: start;
+  }
+  .Navigation {
+    flex-direction: row;
+  }
+  button,
+  .Navigation a {
+    font-size: .7rem;
+    margin: 5px;
+    }
+  .img{
+    width: 100%;
+  }
+  .contact {
+    text-align: left;
+  }
+  .animation {
+    margin-left: 0px;
+    padding-left: 0px;
+  }
+  .animation h1 {
+    font-size: 40px;
+  }
+  .skills {
+    margin-top: 1rem;
+  }
+  .skills ul li {
+    font-size: .8rem;
+  }
+  .img-container {
+    margin: 20px 0;
+  }
 }

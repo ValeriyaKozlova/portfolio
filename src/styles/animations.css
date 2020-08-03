@@ -46,26 +46,73 @@
 }
 
 /* EXPERIENCE ANIMATION */
+.firstBox::before,
+.secondBox::before,
+.thirdBox::before,
+.next::before {
+box-sizing: inherit;
+background-color: var(--secondary-color);
+content: '';
+position: absolute;
+width: 20px;
+height: 20px;
+border-radius: 50%;
+opacity: 0;
+animation-name: opacity-balls;
+animation-duration: 1s;
+animation-fill-mode: forwards;
+}
+.firstBox::after,
+.secondBox::after,
+.thirdBox::after,
+.next::after {
+  box-sizing: inherit;
+  position: absolute;
+  color: var(--secondary-color);
+  left: 5%;
+  animation-duration: 1s;
+  animation-fill-mode: forwards;
+  animation-name: opacity-balls;
+  opacity: 0;
+}
 .profPath::after {
   box-sizing: inherit;
   content: '';
   position: absolute;
   width: 100%;
   height: 100%;
-  border-top: 4px solid var(--secondary-color);
-    width: 0;
-    height: 0;
-}
-
-.profPath::after {
+  width: 0;
+  height: 0;
   top: 0;
   left: 0;
-  animation-name: border-top;
   animation-duration: 10s;
   animation-timing-function: linear;
   animation-fill-mode: forwards;
   opacity: 0;
 }
+.firstBox::after {
+  content: 'Technofuture TIC';
+  animation-delay: 0s;
+}
+.secondBox::after {
+  content: 'BeCode';
+  animation-delay: 1.2s;
+}
+.thirdBox::after {
+  content: 'Blooming riders';
+  animation-delay: 2.5s;
+
+}
+.next::after {
+  content: '';
+  animation-delay: 3.5s;
+}
+
+@media (min-width: 801px) {
+  .profPath::after {
+    border-top: 4px solid var(--secondary-color);
+    animation-name: border-top;
+  }
   @keyframes border-top {
     0%{
       width: 0;
@@ -83,26 +130,20 @@
       border-left-color: var(--secondary-color);
     }
   }
-
   .firstBox::before,
   .secondBox::before,
   .thirdBox::before,
   .next::before {
-  box-sizing: inherit;
-  background-color: var(--secondary-color);
-  content: '';
-  position: absolute;
-  width: 20px;
-  height: 20px;
-  border-radius: 50%;
-  opacity: 0;
   top: -28px;
   left: -10px;
-  animation-name: opacity-balls;
-  animation-duration: 1s;
-  animation-fill-mode: forwards;
+  }
+  .firstBox::after,
+  .secondBox::after,
+  .thirdBox::after,
+  .next::after {
+    top: -55px;
+  }
 }
-
 .firstBox::before {
     animation-delay: 0s;
 }
@@ -116,6 +157,44 @@
     animation-delay: 3.5s;
 }
 
+@media (max-width: 800px) {
+  .profPath::after {
+    border-left: 4px solid var(--secondary-color);
+    animation-name: border-left;
+  }
+  
+    @keyframes border-left {
+      0%{
+        width: 0;
+        height: 0;
+        opacity: 1;
+      }
+      50%{
+      width: 100%;
+      height: 0;
+      }
+      100% {
+        width: 100%;
+        height: 100%;
+        opacity: 1;
+        border-left-color: var(--secondary-color);
+      }
+    }
+    .firstBox::before,
+    .secondBox::before,
+    .thirdBox::before,
+    .next::before {
+    top: -20px;
+    left: -18px;
+  }
+  .firstBox::after,
+  .secondBox::after,
+  .thirdBox::after,
+  .next::after {
+    top: -30px;
+  }
+}
+
 @keyframes  opacity-balls {
     0%{
       opacity: 0;
@@ -124,38 +203,6 @@
     opacity: 1;
     }
   }
-
-.firstBox::after,
-.secondBox::after,
-.thirdBox::after,
-.next::after {
-  box-sizing: inherit;
-  position: absolute;
-    color: var(--secondary-color);
-    top: -55px;
-    left: 5%;
-  animation-duration: 1s;
-  animation-fill-mode: forwards;
-  animation-name: opacity-balls;
-  opacity: 0;
-}
-.firstBox::after {
-    content: 'Technofuture TIC';
-    animation-delay: 0s;
-}
-.secondBox::after {
-    content: 'BeCode';
-    animation-delay: 1.2s;
-}
-.thirdBox::after {
-    content: 'Blooming riders';
-    animation-delay: 2.5s;
-
-}
-.next::after {
-    content: '';
-    animation-delay: 3.5s;
-}
 
 /* ANIMATION OF BUTTON IN PROJECTS */
 .projectInfo button::after{

@@ -29,7 +29,7 @@ function Navbar({ activeLangue, setActiveLangue }) {
         <Logo />
       </div>
       <nav className="Navigation" id="navbar">
-        <NavLink to="/about" activeClassName="active-link">
+        <NavLink to="/" activeClassName="active-link">
           {translate("nav-about")}
         </NavLink>
         <NavLink activeClassName="active-link" to="/education-experience">

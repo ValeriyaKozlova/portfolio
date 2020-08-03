@@ -25,7 +25,6 @@ function LogoAnimated() {
     },
   };
   return (
-    <div className="svgContainer d-none d-lg-block">
       <motion.svg
         //   version="1.1"
         //   id="Layer_1"
@@ -121,7 +120,6 @@ function LogoAnimated() {
           }}
         />
       </motion.svg>
-    </div>
   );
 }
 

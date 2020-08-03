@@ -26,7 +26,7 @@ function App() {
           <Switch>
             <Route
               exact
-              path="/about"
+              path="/"
               component={() => <About />}
             />
             <Route
@@ -65,11 +65,11 @@ function App() {
         >
           git
         </a>
-        <a className="email" href="mailto: kozlova.valeriya.v@gmail.com">
-          kozlova.valeriya.v@gmail.com
-        </a>
         <a className="cv" href="/images/myw3schoolsimage.jpg" download>
           {translate("download")}
+        </a>
+        <a className="email" href="mailto: kozlova.valeriya.v@gmail.com">
+          kozlova.valeriya.v@gmail.com
         </a>
       </div>
         </footer>

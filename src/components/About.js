@@ -7,13 +7,13 @@ const About = () => {
   
   return (
     <section className="col-12 about">
-      <div className="animation">
+      <div className="col-12 animation">
         <h1> {translate("greeting-1")} </h1>
         <h1> {translate("greeting-2")} </h1>
         <h1> {translate("greeting-3")} </h1>
         <div className="overlay"></div>
       </div>
-      <div className="skills">
+      <div className="col-12 col-lg-6 skills">
         <ul>
           <li>JavaScript</li>
           <li>Reactjs</li>
@@ -32,7 +32,12 @@ const About = () => {
           <li>Figma</li>
         </ul>
       </div>
+      <div className="svgContainer d-none d-lg-block">
       <LogoAnimated />
+      </div>
+      <div className="svgContainer-mobile d-lg-none">
+      <LogoAnimated />
+      </div>
       <img alt="myPhoto" className="absolute img d-none d-lg-block" src={MyPhoto} />
       <div>
       <img alt="myPhoto" className="d-lg-none img-fluid photo" src={MyPhoto} />

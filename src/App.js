@@ -25,17 +25,17 @@ function App() {
         <main className="col-lg-10 col-12 container">
           <Switch>
             <Route
-              exact
+            exact
               path="/"
               component={() => <About />}
             />
             <Route
-              exact
+            exact
               path="/education-experience"
               component={() => <Education />}
             />
             <Route
-              exact
+            exact
               path="/projects"
               component={() => <Projects />}
             />

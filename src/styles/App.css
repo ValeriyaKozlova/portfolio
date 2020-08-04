@@ -1,5 +1,3 @@
-/* @import 'grid.css'; */
-@import 'media.css';
 @import url('https://fonts.googleapis.com/css2?family=Lora&display=swap');
 
 :root {
@@ -77,9 +75,12 @@ button:hover,
 }
 .about{
   min-height: calc(100vh - 20px);
+}
+.about,
+.projects,
+.education {
   position: relative;
 }
-
 .svgContainer {
   width: 40%;
   text-align: center;
@@ -95,7 +96,7 @@ button:hover,
  right: 5%;
 }
 .svgContainer-mobile .logoAnimated {
-  width: 100px;
+  width: 70px;
   z-index: 100;
  }
 
@@ -262,15 +263,17 @@ button:hover,
   flex-direction: column;
   align-items: center;
   justify-content: space-around;
+  overflow: scroll;
 }
 .projectInfo p {
   padding: 10px;
+  font-size: 1rem;
 }
 .projectInfo button {
   border: 2px solid var(--secondary-color);
   background-color: var(--dark-color);
-  margin: 5px;
-  padding: 20px;
+  margin: .5em;
+  padding: 1em;
   border-radius: 8px;
   overflow: hidden;
   position: relative;

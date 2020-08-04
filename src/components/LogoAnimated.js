@@ -7,7 +7,7 @@ function LogoAnimated() {
       opacity: 0,
       pathLength: 0,
       fill: "rgba(255, 83, 61, 0)",
-      stroke: "none",
+      stroke: "rgba(255, 83, 61, 0)",
     },
     visible: {
       opacity: 1,

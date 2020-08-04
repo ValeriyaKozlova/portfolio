@@ -35,9 +35,6 @@ const About = () => {
       <div className="svgContainer d-none d-lg-block">
       <LogoAnimated />
       </div>
-      <div className="svgContainer-mobile d-lg-none">
-      <LogoAnimated />
-      </div>
       <img alt="myPhoto" className="absolute img d-none d-lg-block" src={MyPhoto} />
       <div>
       <img alt="myPhoto" className="d-lg-none img-fluid photo" src={MyPhoto} />

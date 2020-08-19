@@ -4,6 +4,7 @@ import Ancubator from "../images/ancubator.png";
 import translate from "../i18n/translate";
 import Blooming from "../images/blooming.png";
 import ProjectCard from "./reusable-components/ProjectCard";
+import "../styles/project.css";
 
 const Projects = () => {
   return (

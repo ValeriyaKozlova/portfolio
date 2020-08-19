@@ -228,7 +228,6 @@ animation-fill-mode: forwards;
   
 .projectInfo button:hover{
   border: 2px solid transparent;
-  transform: scale(1.05);
   will-change: transform;
   }
   .projectInfo button:hover a {

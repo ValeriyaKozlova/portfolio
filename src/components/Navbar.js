@@ -7,6 +7,7 @@ import LogoAnimated from './LogoAnimated'
 
 function Navbar({ activeLangue, setActiveLangue }) {
   return (
+    <div className="col-lg-2 col-12 navbar-nav">
     <div className="navbar-nav">
       <div className="buttons">
         <button
@@ -72,6 +73,7 @@ function Navbar({ activeLangue, setActiveLangue }) {
       <div className="svgContainer-mobile d-lg-none">
       <LogoAnimated />
       </div>
+    </div>
     </div>
   );
 }

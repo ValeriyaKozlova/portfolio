@@ -37,7 +37,7 @@ const About = () => {
       </div>
       <img alt="myPhoto" className="absolute img d-none d-lg-block" src={MyPhoto} />
       <div>
-      <img alt="myPhoto" className="d-lg-none img-fluid photo" src={MyPhoto} />
+      <img alt="myPhoto" className="col-12 d-lg-none img-fluid photo" src={MyPhoto} />
       </div>
     </section>
   );

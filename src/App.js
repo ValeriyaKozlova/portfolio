@@ -16,12 +16,10 @@ function App() {
     <I18nProvider locale={activeLangue}>
       <div className="container-fluid">
         <div className="row">
-        <div className="col-lg-2 col-12 navbar-nav">
           <Navbar
             activeLangue={activeLangue}
             setActiveLangue={setActiveLangue}
           />
-        </div>
         <main className="col-lg-10 col-12 container">
           <Switch>
             <Route

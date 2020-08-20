@@ -6,7 +6,7 @@ function ProjectCard({translateDescription, title, link, imgSrc }) {
   console.log(title)
   console.log(title === "Blooming Riders" || "admin Panel BR")
   return (
-    <div className="col-9 offset-lg-2 container">
+    <div className="col-11 col-lg-9 offset-lg-2 container">
       <div className="row">
         <div className="col-12 container titleContainer">
           <div className="row">

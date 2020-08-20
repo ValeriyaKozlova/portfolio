@@ -7,6 +7,7 @@ const About = () => {
   
   return (
     <section className="col-12 about">
+      <div className="row aboutContainer">
       <div className="col-12 animation">
         <h1> {translate("greeting-1")} </h1>
         <h1> {translate("greeting-2")} </h1>
@@ -32,12 +33,13 @@ const About = () => {
           <li>Figma</li>
         </ul>
       </div>
-      <div className="svgContainer d-none d-lg-block">
+      <div className="col-12 d-none d-lg-block">
       <LogoAnimated />
       </div>
       <img alt="myPhoto" className="absolute img d-none d-lg-block" src={MyPhoto} />
       <div>
       <img alt="myPhoto" className="col-12 d-lg-none img-fluid photo" src={MyPhoto} />
+      </div>
       </div>
     </section>
   );

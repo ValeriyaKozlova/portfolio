@@ -7,7 +7,7 @@ import "./styles/App.css";
 import "./styles/animations.css";
 import Navbar from "./components/Navbar";
 import { I18nProvider, LOCALES } from "./i18n";
-import translate from "./i18n/translate";
+import Footer from "./components/Footer";
 
 function App() {
   const [activeLangue, setActiveLangue] = useState(LOCALES.ENGLISH);
@@ -16,10 +16,12 @@ function App() {
     <I18nProvider locale={activeLangue}>
       <div className="container-fluid">
         <div className="row">
+        <div className="d-none d-lg-block col-lg-2 navbar-nav">
           <Navbar
             activeLangue={activeLangue}
             setActiveLangue={setActiveLangue}
           />
+        </div>
         <main className="col-lg-10 col-12 container">
           <Switch>
             <Route
@@ -40,37 +42,9 @@ function App() {
           </Switch>
         </main>
         </div>
-        <footer className="d-lg-none">
-        <div className="contact">
-        <a
-          href="https://www.facebook.com/valeriya.kozlova.73"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          f
-        </a>
-        <a
-          href="https://www.linkedin.com/in/valeriya-kozlova-v/"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          in
-        </a>
-        <a
-          href="https://github.com/ValeriyaKozlova"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          git
-        </a>
-        <a className="cv" href="/images/myw3schoolsimage.jpg" download>
-          {translate("download")}
-        </a>
-        <a className="email" href="mailto: kozlova.valeriya.v@gmail.com">
-          kozlova.valeriya.v@gmail.com
-        </a>
-      </div>
-        </footer>
+        <Footer  
+            activeLangue={activeLangue}
+            setActiveLangue={setActiveLangue}/>
       </div>
     </I18nProvider>
   );

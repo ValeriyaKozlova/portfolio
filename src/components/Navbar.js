@@ -3,12 +3,10 @@ import { NavLink } from "react-router-dom";
 import { LOCALES } from "../i18n";
 import translate from "../i18n/translate";
 import Logo from "./Logo";
-import LogoAnimated from './LogoAnimated'
 
 function Navbar({ activeLangue, setActiveLangue }) {
   return (
-    <div className="col-lg-2 col-12 navbar-nav">
-    <div className="navbar-nav">
+    <div className="navbar-nav col-12">
       <div className="buttons">
         <button
           className={activeLangue === "en" ? "activeLangue" : ""}
@@ -30,7 +28,7 @@ function Navbar({ activeLangue, setActiveLangue }) {
         </button>
         <Logo />
       </div>
-      <nav className="Navigation" id="navbar">
+      <nav className="Navigation col-12 d-flex justify-content-between" id="navbar">
         <NavLink exact to="/" activeClassName="active-link">
           {translate("nav-about")}
         </NavLink>
@@ -70,10 +68,6 @@ function Navbar({ activeLangue, setActiveLangue }) {
           {translate("download")}
         </a>
       </div>
-      <div className="svgContainer-mobile d-lg-none">
-      <LogoAnimated />
-      </div>
-    </div>
     </div>
   );
 }

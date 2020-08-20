@@ -4,8 +4,9 @@ import "../styles/education.css"
 
 const Education = () => {
   return (
-    <section className="col-12 education">
+    <section className="col-12 container education">
       <h1 className="col-12 d-none d-lg-block">{translate("heading-education")}</h1>
+      <div className="row educationContainer">
       <div className="col-12 col-lg-6  offset-lg-3 message">
         <p id="message">{translate("message")}</p>
       </div>
@@ -32,6 +33,7 @@ const Education = () => {
           <h2>What's next?..</h2>
         </div>
         </div>
+      </div>
       </div>
     </section>
   );

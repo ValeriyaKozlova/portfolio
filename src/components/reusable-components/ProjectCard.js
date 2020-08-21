@@ -6,11 +6,11 @@ function ProjectCard({translateDescription, title, link, imgSrc }) {
   console.log(title)
   console.log(title === "Blooming Riders" || "admin Panel BR")
   return (
-    <div className="col-11 col-lg-9 offset-lg-2 container">
+    <div className="col-11 col-md-9 offset-md-2 container">
       <div className="row">
         <div className="col-12 container titleContainer">
           <div className="row">
-          <h2 className="col-12 offset-lg-5 col-md-7">{title}</h2>
+          <h2 className="col-12 offset-md-5 col-md-7">{title}</h2>
           </div>
         </div>
         <div className="col-12 col-md-6 img-container">
@@ -22,7 +22,7 @@ function ProjectCard({translateDescription, title, link, imgSrc }) {
           <img src={imgSrc} alt={`screenshot of ${title} site`} />
           }
         </div>
-        <div className="col-12 offset-lg-5 col-md-7 projectInfo">
+        <div className="col-12 offset-md-5 col-md-7 projectInfo">
           <p>{translateDescription}</p>
    {        title !==  "admin Panel BR" &&
              <button>

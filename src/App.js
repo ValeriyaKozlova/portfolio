@@ -42,10 +42,10 @@ function App() {
           </Switch>
         </main>
         </div>
-        <Footer  
+      </div>
+      <Footer  
             activeLangue={activeLangue}
             setActiveLangue={setActiveLangue}/>
-      </div>
     </I18nProvider>
   );
 }

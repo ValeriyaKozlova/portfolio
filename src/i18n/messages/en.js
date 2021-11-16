@@ -10,7 +10,7 @@ export default {
     "greeting-1": "Hello!",
     "greeting-2": "I am VALERIYA,",
     "greeting-3": "Frontend Developer",
-    "message": "I have education and experience in the tourism field. But after moving to Belgium in the end of 2017, I decided to change my professional path verse Web Development. I am interested in everything that it contains. In March 2020, I finished a Programmation course at BeCode. Now I'm currently doing an internship at BloomingRiders. I love JavaScript, and ReactJs is the main technology I work with.",
+    "message": "I have education and experience in the tourism field. But after moving to Belgium in the end of 2017, I decided to change my professional path verse Web Development. I am interested in everything that it contains. In March 2020, I finished a Programmation course at BeCode and complited an internship at BloomingRiders. Now I work on my project - an online store of Korean Cosmetics, but I am open to new opportunities. I want to improve, first of all, my front-end developer skills.  But In the future, I want to become a full-stack developer. I love JavaScript, and ReactJs is the main technology I work with.",
     "heading-education": "Education && Experience",
     "heading-projects": "Projects",
     "country": "Belgium",

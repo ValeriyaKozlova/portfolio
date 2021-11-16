@@ -9,7 +9,7 @@ body {
   position: relative;
 }
 
-h2, h1 {
+h2, h1, button, ul {
   letter-spacing: 1px;
   font-weight: 200;
 }
@@ -61,7 +61,6 @@ section {
   margin-top: 30px;
 }
 
-
 button {
   color: $light-color;
   background: none;
@@ -87,11 +86,28 @@ button {
 }
 
 .about{
-  margin-top: 100px;
+  .skills {
+    ul {
+    list-style-type: none;
+    display: flex;
+    padding-left: 0;
+    color: $light-color;
+    li {
+      margin: 5px 10px;
+      padding: 5px 10px;
+      font-size: 1.2rem;
+      background: $rose-dark;
+    }
+  }}
+  #message {
+    font-size: 1.2rem;
+  }
 } 
+
 .about,
 .projects,
-.education {
+.education { 
+  margin-top: 100px;
   position: relative;
 }
 
@@ -105,25 +121,6 @@ button {
   z-index: 100;
  }
 
-.skills {
-  margin-top: 4rem;
-}
-
-.skills ul li {
-  color: $background-color;
-}
-.about ul {
-  list-style-type: none;
-  display: flex;
-  width: 40%;
-  padding-left: 0;
-}
-.about ul li {
-  margin: 5px 10px;
-  font-size: 2rem;
-  font-weight: bold;
-  color: $light-color;
-}
 .col-10 {
   border-left: 2px solid $complimentary-color;
   // min-height: 100vh;

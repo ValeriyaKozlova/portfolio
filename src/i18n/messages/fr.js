@@ -10,7 +10,7 @@ export default {
     "greeting-1": "Salut!",
     "greeting-2": "Je suis Valeriya,",
     "greeting-3": "Développeur Frontend ",
-    "message": "J'ai l'éducation et l'expérience dans le domaine du tourisme. Mais après avoir déménagé en Belgique fin 2017, j'ai décidé de changer mon parcours professionnel vers le développement Web. Je m'intéresse à tout ce qu'il contient. En mars 2020, j'ai terminé un cours de programmation chez BeCode. Maintenant, je fais actuellement un stage chez BloomingRiders. J'adore JavaScript et ReactJs est la principale technologie avec laquelle je travaille.",
+    "message": "J'ai l'éducation et l'expérience dans le domaine du tourisme. Mais après avoir déménagé en Belgique fin 2017, j'ai décidé de changer mon parcours professionnel vers le développement Web. Je m'intéresse à tout ce qu'il contient. En mars 2020, j'ai terminé un cours de programmation chez BeCode et effectué un stage chez BloomingRiders. Maintenant, je travaille sur mon projet - une boutique en ligne de cosmétiques coréens, mais je suis ouverte à de nouvelles opportunités. Je souhaite avant tout améliorer mes compétences de développeur front-end. Mais à l'avenir, je veux devenir un développeur full-stack. J'adore JavaScript et ReactJs est la principale technologie avec laquelle je travaille.",
     "heading-education": "Education && Experience",
     "heading-projects": "Projects",
     "country": "Belgique",

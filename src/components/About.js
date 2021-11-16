@@ -1,19 +1,26 @@
 import React from "react";
-import MyPhoto from "../images/me.png";
 import translate from "../i18n/translate";
-import LogoAnimated from "./LogoAnimated";
 
 const About = () => {
 
   return (
     <section className="container about">
-      <div className="row col-12">
-        {/* <div className="col-lg-6 skills">
+      <div className="row">
+        <h2 className="col-12 d-none d-lg-block">{translate("nav-about")}</h2>
+        <div className="col-12 col-lg-6 message">
+          <p id="message">{translate("message")}</p>
+        </div>
+        <div className="col-12 col-lg-6 skills">
           <ul>
             <li>JavaScript</li>
-            <li>Reactjs</li>
-            <li>Gatsby</li>
-            <li>Nodejs</li>
+            <li>TypeScript</li>
+            <li>Node.js</li>
+          </ul>
+          <ul>
+            <li>ReactJS</li>
+            <li>React Router</li>
+            <li>Redux</li>
+            <li>Next.js</li>
           </ul>
           <ul>
             <li>HTML</li>
@@ -27,12 +34,6 @@ const About = () => {
             <li>Figma</li>
           </ul>
         </div>
-        <div className="col-6">
-          <img alt="myPhoto" className="img d-none d-lg-block" src={MyPhoto} />
-        </div>
-        <div>
-          <img alt="myPhoto" className="d-lg-none img-fluid photo" src={MyPhoto} />
-        </div> */}
       </div>
     </section>
   );

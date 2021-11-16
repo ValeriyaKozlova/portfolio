@@ -1,4 +1,4 @@
-import React, { useEffect, useLayoutEffect, useRef, useState } from "react";
+import React, { useLayoutEffect, useRef } from "react";
 import { NavLink } from "react-router-dom";
 import { LOCALES } from "../i18n";
 import translate from "../i18n/translate";
@@ -7,15 +7,10 @@ import Logo from "./Logo";
 function Navbar({ activeLangue, setActiveLangue }) {
   const ref = useRef(null)
 
-  const [scroll, setScroll] = useState(0)
-  const handleScroll = () => {
-
-  }
   useLayoutEffect(() => {
     let active = false
     const onScroll = () => {
       if (window.scrollY > 0 && !active) {
-        console.log("hello")
         ref.current.classList.add("active");
         active = true
       } else if (window.scrollY === 0) {

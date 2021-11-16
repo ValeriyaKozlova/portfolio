@@ -8,7 +8,7 @@ body {
   position: relative;
 }
 
-h2, h1 {
+h2, h1, button, ul {
   letter-spacing: 1px;
   font-weight: 200;
 }
@@ -104,13 +104,30 @@ button.activeLangue {
   color: #ED0077;
 }
 
-.about {
-  margin-top: 100px;
+.about .skills ul {
+  list-style-type: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding-left: 0;
+  color: #f8f6ff;
+}
+
+.about .skills ul li {
+  margin: 5px 10px;
+  padding: 5px 10px;
+  font-size: 1.2rem;
+  background: #240e13;
+}
+
+.about #message {
+  font-size: 1.2rem;
 }
 
 .about,
 .projects,
 .education {
+  margin-top: 100px;
   position: relative;
 }
 
@@ -123,30 +140,6 @@ button.activeLangue {
 .svgContainer-mobile .logoAnimated {
   width: 70px;
   z-index: 100;
-}
-
-.skills {
-  margin-top: 4rem;
-}
-
-.skills ul li {
-  color: linear-gradient(#b384ec, white);
-}
-
-.about ul {
-  list-style-type: none;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  width: 40%;
-  padding-left: 0;
-}
-
-.about ul li {
-  margin: 5px 10px;
-  font-size: 2rem;
-  font-weight: bold;
-  color: #f8f6ff;
 }
 
 .col-10 {

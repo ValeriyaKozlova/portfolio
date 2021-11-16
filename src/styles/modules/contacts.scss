@@ -1,0 +1,46 @@
+@import '../variables/colors/_colors.scss';
+
+#contacts {
+  background: $rose-dark;
+  h2 {
+    color: $light-color;
+  }
+  a {
+    font-size: 1.3rem;
+    color: $light-color;
+    text-decoration: none;
+    margin: 5px;
+    transition: all .2s;
+  }
+  .cv {
+    a {
+      margin: 5px 20px;
+    }
+  }
+  .cv, .email {
+    transition: all .5s;
+    a {
+      &:hover {
+        color: $rose-color;
+      }
+    }
+
+  }
+  .social, .cv, .email {
+    display: flex;
+    justify-content: center;
+    margin-top: 25px;
+  }
+.social {
+
+  a {
+    width: 50px;
+    height: 50px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background: $rose-color;
+  }
+}
+}

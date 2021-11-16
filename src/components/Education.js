@@ -1,6 +1,6 @@
 import React, { useLayoutEffect } from "react";
 import translate from "../i18n/translate";
-import "../styles/education.scss"
+import "../styles/modules/education.scss"
 
 const Education = () => {
 
@@ -59,7 +59,7 @@ const Education = () => {
                 <p>{translate("description-becode")}</p>
               </div>
             </div>
-            <div className="ro">
+            <div className="row">
               <div className="col-12 col-lg-6 offset-6 workContainer interact">
                 <h3>Blooming riders</h3>
                 <p>
@@ -67,6 +67,17 @@ const Education = () => {
                 </p>
                 <p>{translate("description-blooming")}</p>
               </div>
+            </div>
+            <div className="row">
+              <div className="col-12 col-lg-6 workContainer interact even">
+                <h3>Korina.be</h3>
+                <p>
+                  {translate("date-korina")}, {translate("country-city")}
+                </p>
+                <p>{translate("description-korina")}</p>
+              </div>
+            </div>
+            <div className="row">
               <div className="col-12 workContainer next interact">
                 <h3>What's next?..</h3>
               </div>

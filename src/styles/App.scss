@@ -13,6 +13,9 @@ h2, h1, button, ul {
   letter-spacing: 1px;
   font-weight: 200;
 }
+section {
+  padding: 50px 0;
+}
 
 header {
   position: -webkit-sticky; /* Safari */
@@ -55,10 +58,6 @@ header {
       }
     }
   }
-}
-
-section {
-  margin-top: 30px;
 }
 
 button {
@@ -104,12 +103,7 @@ button {
   }
 } 
 
-.about,
-.projects,
-.education { 
-  margin-top: 100px;
-  position: relative;
-}
+
 
 .svgContainer-mobile {
  position: absolute;
@@ -132,58 +126,15 @@ button {
   right: -5%;
   bottom: 0;
 }
-.img{
-  width: 65%;
-  z-index: 15;
-  filter: drop-shadow(2px 4px 6px $dark-color);
-  // mix-blend-mode: luminosity;
-  opacity: .9;
-}
-
-.animation {
-  margin-top: 1em;
-  margin-left: -80px;
-  position: relative;
-  background-color: transparent;
-  text-transform: uppercase;
-}
-
-.animation h1 {
-  font-size: 3.5em;
-  margin: 0;
-  color: $secondary-color;
-  transform: translateY(-600px);
-  animation: 1.2s slideIn ease-in-out forwards 1s;
-  z-index: 10;
-  opacity: 0;
-  position: relative;
-}
-
-.contact{
-  text-align: center;
-  margin-bottom: 10px;
-}
-
-.contact a{
-  font-size: 1.5rem;
-  color: $secondary-color;
-  font-weight: bold;
-  text-decoration: none;
-  margin: 5px;
-  transition: all .2s;
-}
-.contact .cv {
-  font-size: 1.2rem;
-}
-.contact .email {
-  display: block;
-  font-size: .8rem;
-}
 
 footer{
-  position: fixed;
-  bottom: 0;
-  background-color: rgba(15, 22, 38, .7)
+  background-color: $rose-dark;
+  color: $light-color;
+  p {
+    margin-bottom: 0;
+    padding: 10px 0;
+    text-align: center;
+  }
 }
 
 @media (max-width: 767px) {ƒ
@@ -277,6 +228,7 @@ text-align: center;
   margin-top: -80px;
   position: relative;
 overflow: hidden;
+padding-top: 0;
   #greeting{
     position: absolute;
     height: 100px;

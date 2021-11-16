@@ -8,6 +8,7 @@ import Navbar from './components/Navbar'
 import { I18nProvider, LOCALES } from './i18n'
 import Footer from './components/Footer'
 import GreetingArea from './components/GreetingArea'
+import Contacts from './components/Contacts'
 
 function App() {
   const [activeLangue, setActiveLangue] = useState(LOCALES.ENGLISH)
@@ -23,8 +24,9 @@ function App() {
         <About />
         <Education />
         <Projects />
+        <Contacts />
       </main>
-      <Footer activeLangue={activeLangue} setActiveLangue={setActiveLangue} />
+      <Footer />
     </I18nProvider>
   )
 }

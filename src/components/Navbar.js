@@ -38,6 +38,9 @@ function Navbar({ activeLangue, setActiveLangue }) {
           <NavLink activeClassName="active-link" exact to="/#projects">
             {translate("nav-projects")}
           </NavLink>
+          <NavLink activeClassName="active-link" exact to="/#contacts">
+            {translate("contacts")}
+          </NavLink>
         </div>
         <div className="buttons">
           <button

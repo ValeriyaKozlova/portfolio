@@ -1,9 +1,8 @@
-@import './variables/colors/_colors.scss';
+@import '../variables/colors/_colors.scss';
 
 .education {
   overflow: hidden;
   background-color: $rose-dark;
-  padding-top: 100px;
 h2 {
   color: $light-color;
 }
@@ -13,8 +12,8 @@ h2 {
   margin-top: 50px;
   padding-top: 20px;
   border-top: 0;
-  height: 900px;
   position: relative;
+  padding-bottom: 50px;
 }
 .workContainer {
   box-sizing: border-box;

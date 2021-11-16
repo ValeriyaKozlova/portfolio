@@ -3,47 +3,47 @@ import React from "react";
 function Logo() {
   return (
     <div className="logo-container d-none d-md-block">
-    <svg
-      xmlns="http://www.w3.org/2000/svg"
-      xmlnsXlink="http://www.w3.org/1999/xlink"
-      width="70px"
-      viewBox="0 0 100 100"
-	  xmlSpace="preserve"
-      enableBackground="new 0 0 100 100"
-	  
-    >
-      <path
-        id="open"
-        className="st0"
-        style={{ fill: "#EA5443" }}
-        d="M2.86,49.71l18-9.27v2.68L5.69,50.71v0.08l15.17,7.61v2.68l-18-9.27V49.71z"
-      />
-      <path
-        id="close"
-        className="st0"
-        style={{ fill: "#EA5443" }}
-        d="M96.67,51.84l-18,9.24V58.4l15.29-7.61v-0.08l-15.29-7.61v-2.68l18,9.24V51.84z"
-      />
-      <path
-        id="k"
-        className="st0"
-        style={{ fill: "#EA5443" }}
-        d="M54.44,47.67l20.32,26.8h-6.62L50.73,51.18"
-      />
-      <g id="k_x5F_shadow" className="st1" style={{ opacity: 0.19 }}>
-        <defs>
-          <path
-            id="SVGID_1_"
-            className="st1"
-            style={{ opacity: 0.19 }}
-            d="M54.44,47.67l20.32,26.8h-6.62L50.73,51.18"
-          />
-        </defs>
-        <clipPath id="SVGID_2_">
-          <use xlinkHref="#SVGID_1_" style={{ overflow: "visible" }} />
-        </clipPath>
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        xmlnsXlink="http://www.w3.org/1999/xlink"
+        width="70px"
+        viewBox="0 0 100 100"
+        xmlSpace="preserve"
+        enableBackground="new 0 0 100 100"
 
-		<linearGradient
+      >
+        <path
+          id="open"
+          className="st0"
+          style={{ fill: "#ED0077" }}
+          d="M2.86,49.71l18-9.27v2.68L5.69,50.71v0.08l15.17,7.61v2.68l-18-9.27V49.71z"
+        />
+        <path
+          id="close"
+          className="st0"
+          style={{ fill: "#ED0077" }}
+          d="M96.67,51.84l-18,9.24V58.4l15.29-7.61v-0.08l-15.29-7.61v-2.68l18,9.24V51.84z"
+        />
+        <path
+          id="k"
+          className="st0"
+          style={{ fill: "#ED0077" }}
+          d="M54.44,47.67l20.32,26.8h-6.62L50.73,51.18"
+        />
+        <g id="k_x5F_shadow" className="st1" style={{ opacity: 0.19 }}>
+          <defs>
+            <path
+              id="SVGID_1_"
+              className="st1"
+              style={{ opacity: 0.19 }}
+              d="M54.44,47.67l20.32,26.8h-6.62L50.73,51.18"
+            />
+          </defs>
+          <clipPath id="SVGID_2_">
+            <use xlinkHref="#SVGID_1_" style={{ overflow: "visible" }} />
+          </clipPath>
+
+          <linearGradient
             id="SVGID_3_"
             gradientUnits="userSpaceOnUse"
             x1="18.7738"
@@ -73,14 +73,14 @@ function Logo() {
             clipPath="url(#SVGID_2_)"
             fill="url(#SVGID_3_)"
           />
-      </g>
-      <path
-        id="v"
-        className="st0"
-        style={{ fill: "#EA5443" }}
-        d="M28.45,26.55l15.86,40.3l15.8-40.3h6.41L46.94,74.47h-5.27L22.04,26.55H28.45z"
-      />
-    </svg>
+        </g>
+        <path
+          id="v"
+          className="st0"
+          style={{ fill: "#ED0077" }}
+          d="M28.45,26.55l15.86,40.3l15.8-40.3h6.41L46.94,74.47h-5.27L22.04,26.55H28.45z"
+        />
+      </svg>
     </div>
   );
 }

@@ -4,20 +4,24 @@ function ListOfProjects({ changeProject, project }) {
   return (
     <div className="preview justify-content-center">
       <button
-        className={project === "blooming" ? "selected" : "notSelected"}
-        onClick={() => changeProject("blooming", "#FFF7ED", "150px")}
+        className={project === "Korina" ? "selected" : "notSelected"}
+        onClick={() => changeProject("Korina", "50px")}
       ></button>
       <button
-        className={project === "jobswap" ? "selected" : "notSelected"}
-        onClick={() => changeProject("jobswap", "#BFD4DB", "-150px")}
+        className={project === "Blooming Riders" ? "selected" : "notSelected"}
+        onClick={() => changeProject("Blooming Riders", "-250px")}
       ></button>
       <button
-        className={project === "ancubator" ? "selected" : "notSelected"}
-        onClick={() => changeProject("ancubator", "#bbeaff", "-400px")}
+        className={project === "JobSwap" ? "selected" : "notSelected"}
+        onClick={() => changeProject("JobSwap", "-500px")}
       ></button>
       <button
-        className={project === "a6k" ? "selected" : "notSelected"}
-        onClick={() => changeProject("a6k", "#F6E2E3", "-650px")}
+        className={project === "ANCUBATOR" ? "selected" : "notSelected"}
+        onClick={() => changeProject("ANCUBATOR", "-750px")}
+      ></button>
+      <button
+        className={project === "A6K" ? "selected" : "notSelected"}
+        onClick={() => changeProject("A6K", "-950px")}
       ></button>
     </div>
   )

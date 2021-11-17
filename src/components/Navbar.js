@@ -1,7 +1,8 @@
 import React, { useLayoutEffect, useRef } from "react";
-import { NavLink } from "react-router-dom";
+import { NavHashLink } from 'react-router-hash-link';
 import { LOCALES } from "../i18n";
 import translate from "../i18n/translate";
+import { scrollWithOffset } from "../utils/scroll";
 import Logo from "./Logo";
 
 function Navbar({ activeLangue, setActiveLangue }) {
@@ -27,20 +28,34 @@ function Navbar({ activeLangue, setActiveLangue }) {
   return (
     <header ref={ref}>
       <nav className="navbar">
-        <Logo />
+
+        <NavHashLink
+          smooth
+          to="/#"
+        >
+          <Logo />
+        </NavHashLink>
         <div className="navigation" id="navbar">
-          <NavLink exact to="/#about" activeClassName="active-link">
+          <NavHashLink
+            scroll={el => scrollWithOffset(el)}
+            to="/#about">
             {translate("nav-about")}
-          </NavLink>
-          <NavLink activeClassName="active-link" exact to="/#education-experience">
+          </NavHashLink>
+          <NavHashLink
+            scroll={el => scrollWithOffset(el)}
+            to="/#education">
             {translate("nav-exp")}
-          </NavLink>
-          <NavLink activeClassName="active-link" exact to="/#projects">
+          </NavHashLink>
+          <NavHashLink
+            scroll={el => scrollWithOffset(el)}
+            to="/#projects">
             {translate("nav-projects")}
-          </NavLink>
-          <NavLink activeClassName="active-link" exact to="/#contacts">
+          </NavHashLink>
+          <NavHashLink
+            smooth
+            to="/#contacts">
             {translate("contacts")}
-          </NavLink>
+          </NavHashLink>
         </div>
         <div className="buttons">
           <button

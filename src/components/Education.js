@@ -1,6 +1,5 @@
 import React, { useLayoutEffect } from "react";
 import translate from "../i18n/translate";
-import "../styles/modules/education.scss"
 
 const Education = () => {
 
@@ -34,7 +33,7 @@ const Education = () => {
   }, [])
 
   return (
-    <section className="education" id="exp">
+    <section id="education">
       <div className="container">
         <div className="row">
           <h2 className="col-12 d-none d-lg-block">

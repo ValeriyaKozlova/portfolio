@@ -1,0 +1,37 @@
+@import '../variables/colors/_colors.scss';
+
+#education {
+  overflow: hidden;
+  background-color: $rose-dark;
+  h2 {
+    color: $light-color;
+  }
+  .profPath {
+    box-sizing: border-box;
+    position: relative;
+    margin-top: 50px;
+    padding-top: 20px;
+    border-top: 0;
+    position: relative;
+    padding-bottom: 50px;
+  }
+  .workContainer {
+    box-sizing: border-box;
+    padding: 20px;
+    border: 0;
+    color: $light-color;
+    position: relative;
+    &.even {
+      text-align: right;
+      padding-right: 40px;
+    }
+  }
+  .next {
+    text-align: center;
+  }
+}
+@media (max-width: 767px) {
+  .workContainer:nth-child(even) {
+    text-align: left;
+  }
+}

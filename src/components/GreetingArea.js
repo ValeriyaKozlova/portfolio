@@ -1,5 +1,7 @@
 import React from "react";
+import { NavHashLink } from "react-router-hash-link";
 import translate from "../i18n/translate";
+import { scrollWithOffset } from "../utils/scroll";
 
 const GreetingArea = () => {
   return (
@@ -13,7 +15,11 @@ const GreetingArea = () => {
         <h1>{translate("greeting-1")} <span>{translate("greeting-2")}</span>
           <p>{translate("greeting-3")}</p></h1>
         <button>
-          {translate("nav-projects")}
+          <NavHashLink
+            scroll={el => scrollWithOffset(el)}
+            to="/#projects">
+            {translate("nav-projects")}
+          </NavHashLink>
         </button>
       </div>
     </section>

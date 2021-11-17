@@ -13,7 +13,7 @@
     "react-favicon": "0.0.18",
     "react-intl": "^5.4.4",
     "react-router-dom": "^5.2.0",
-    "react-router-hash-link": "^2.0.0",
+    "react-router-hash-link": "^2.4.3",
     "react-scripts": "3.4.1",
     "sass": "^1.43.4"
   },

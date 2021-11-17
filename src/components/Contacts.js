@@ -1,6 +1,5 @@
 import React from 'react'
 import translate from "../i18n/translate";
-import "../styles/modules/contacts.scss"
 
 export default function Contacts() {
   return (

@@ -9,7 +9,10 @@ body {
   position: relative;
 }
 
-h2, h1, button, ul {
+h2,
+h1,
+button,
+ul {
   letter-spacing: 1px;
   font-weight: 200;
 }
@@ -24,7 +27,7 @@ header {
   width: 100%;
   height: 80px;
   z-index: 100;
-  transition: all .2s;
+  transition: all 0.2s;
   &.active {
     background-color: $black-color;
     backdrop-filter: blur(10px);
@@ -38,8 +41,8 @@ header {
     .navigation {
       display: flex;
       align-items: center;
-      transition: all .3s;
-       a {
+      transition: all 0.3s;
+      a {
         color: $light-color;
         text-transform: uppercase;
         font-size: 1.2rem;
@@ -47,13 +50,13 @@ header {
         margin: 0 15px;
         letter-spacing: 1px;
         text-decoration: none;
-        transition: all .2s;
+        transition: all 0.2s;
         // &.active-link{
         //   color: $light-color;
         //   text-shadow: 2px 2px 2px rgba(000, 000, 000, .8);
         // }
         &:hover {
-          color: $rose-color
+          color: $rose-color;
         }
       }
     }
@@ -71,63 +74,41 @@ button {
   &:last-child {
     border-right: none;
   }
-  &:focus{
+  &:focus {
     outline: none;
   }
   &:hover,
   .contact a:hover,
   .Navigation a:hover {
-  color: $rose-color;
-}
-&.activeLangue {
-  color: $rose-color;
-}
-}
-
-.about{
-  .skills {
-    ul {
-    list-style-type: none;
-    display: flex;
-    padding-left: 0;
-    color: $light-color;
-    li {
-      margin: 5px 10px;
-      padding: 5px 10px;
-      font-size: 1.2rem;
-      background: $rose-dark;
-    }
-  }}
-  #message {
-    font-size: 1.2rem;
+    color: $rose-color;
   }
-} 
-
-
+  &.activeLangue {
+    color: $rose-color;
+  }
+}
 
 .svgContainer-mobile {
- position: absolute;
- top: -15%;
- right: 5%;
+  position: absolute;
+  top: -15%;
+  right: 5%;
 }
 .svgContainer-mobile .logoAnimated {
   width: 70px;
   z-index: 100;
- }
+}
 
 .col-10 {
   border-left: 2px solid $complimentary-color;
-  // min-height: 100vh;
   padding: 0 20px;
 }
 
-.absolute{
+.absolute {
   position: absolute;
   right: -5%;
   bottom: 0;
 }
 
-footer{
+footer {
   background-color: $rose-dark;
   color: $light-color;
   p {
@@ -137,7 +118,13 @@ footer{
   }
 }
 
-@media (max-width: 767px) {ƒ
+@import './modules/_contacts.scss';
+@import './modules/_project.scss';
+@import './modules/_education.scss';
+@import './modules/_about.scss';
+@import './modules/_greeting.scss';
+
+@media (max-width: 767px) {
   .about,
   .navbar-nav {
     min-height: auto;
@@ -153,29 +140,15 @@ footer{
   .Navigation a {
     font-size: 1rem;
     margin: 5px;
-    }
-  .img{
-    width: 100%;
-    margin-top: -4rem;
   }
   .contact {
     text-align: left;
-  }
-  .animation {
-    margin-left: 0px;
-    padding-left: 0px;
-  }
-  .animation h1 {
-    font-size: 40px;
   }
   .skills {
     margin-top: 1rem;
   }
   .skills ul li {
-    font-size: .8rem;
-  }
-  .img-container {
-    margin: 20px 0;
+    font-size: 0.8rem;
   }
   .workContainer {
     margin: 15px 10px;
@@ -183,94 +156,5 @@ footer{
   .message {
     margin-top: 1rem;
     padding: 0;
-  }
-  /* projects */
-  .projectContainer {
-    margin-top: 1rem;
-    }
-  .projectContainer .container {
-    height: auto;
-    margin-bottom: 50px;
-    padding-top: 20px;
-    }
-  .img-container {
-    position: relative;
-      height: 200px;
-      left: 0px;
-      top: 0px;
-  }
-  .projectInfo p {
-    text-align: center;
-  }
-  .projectInfo p {
-    padding: 10px;
-    font-size: 1rem;
-    width: 100%;
-  }
-  
-  .projectInfo button {
-    width: 90%;
-    margin: auto;
-    margin-bottom: 20px;
-  }
-  .projectContainer .titleContainer{
-    margin-bottom: 0;
-text-align: center;
-}
-.projectContainer .titleContainer h2{
- padding: 20px
-}
-}
-
-
-.greetingArea {
-  height: 100vh;
-  margin-top: -80px;
-  position: relative;
-overflow: hidden;
-padding-top: 0;
-  #greeting{
-    position: absolute;
-    height: 100px;
-    width: 700px;
-    top: calc(50% - 50px);
-    right: calc(50% - 350px);
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    h1 {
-      color: $light-color;
-      text-align: center;
-      text-transform: uppercase;
-      span {
-        color: $rose-color;
-        font-weight: 600;
-      }
-    }
-    button {
-    margin: auto;
-      color: $light-color;
-      letter-spacing: 1px;
-      font-weight: 200;
-      border: 1px solid $light-color;
-      font-size: 1.5rem;
-      padding: 5px 15px;
-      margin-top: 25px;
-      transition: all .2s;
-      &:hover {
-        border-color: $rose-color;
-        background-color: $rose-color;
-        transform: scale(1.1);
-        
-      }
-    }
-  }
-  #filter {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    top: 0;
-    background: $filter-color;
-    opacity: .7;
   }
 }

@@ -4,7 +4,7 @@ import translate from "../i18n/translate";
 const About = () => {
 
   return (
-    <section className="container about">
+    <section className="container" id="about">
       <div className="row">
         <h2 className="col-12 d-none d-lg-block">{translate("nav-about")}</h2>
         <div className="col-12 col-lg-6 message">

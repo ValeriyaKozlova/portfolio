@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom';
 import translate from "../i18n/translate";
 
 export default function Contacts() {
@@ -9,9 +10,9 @@ export default function Contacts() {
           <h2 className="col-12">{translate("contacts")}</h2>
         </div>
         <div className="cv">
-          <a href="/images/myw3schoolsimage.jpg" download>
+          <Link to="/cv-valeriya">
             {translate("view-cv")}
-          </a>
+          </Link>
           <a href="/images/myw3schoolsimage.jpg" download>
             {translate("download")}
           </a>

@@ -28,6 +28,15 @@ export default {
     "ANCUBATOR": "C'est mon premier projet personnel en tant que freelance - un site très simple. Technologies: HTML, Bootstrap, Figma, Mailchimp",
     "Blooming Riders": "Ce fut le premier projet vraiment difficile car il consistait à développer un système lms à partir de zéro. La première partie du projet est un système administratif à travers lequel il est possible de créer des cours avec des leçons, des tests de vérification, des articles, des promotions, des abonnements, des sondages d'utilisateurs. La deuxième partie est la plate-forme elle-même. C'est ici qu'il a été mis en place : un compte utilisateur personnel avec accès aux fonctionnalités du site selon le niveau de l'utilisateur, un système de paiement a été mis en place, un système d'autorisation par jetons. Technologies : JS, ReactJS, Next.js, Sass",
     "Korina": "Ma propre entreprise est une boutique en ligne de cosmétiques coréens. La première partie du projet est un système administratif avec lequel vous pouvez gérer les marques, les produits, suivre les commandes. La deuxième partie est le magasin. Ici mis en œuvre : compte personnel de l'utilisateur, système de paiement, système d'autorisation par tokens, changement de langue à l'aide du plugin i18n. Technologies : JS, ReactJS, Next.js, Sass.",
-    "JobSwap": "Le deuxième projet que j'ai réalisé en tant qu'indépendant. Le projet comprenait le développement du site lui-même et du panneau administratif. J'ai implémenté l'intégralité du frontend. Technologies : ReactJS, Next.js, Sass, Figma. Aussi, pour la première fois, j'ai implémenté la commutation dynamique des langues."
+    "JobSwap": "Le deuxième projet que j'ai réalisé en tant qu'indépendant. Le projet comprenait le développement du site lui-même et du panneau administratif. J'ai implémenté l'intégralité du frontend. Technologies : ReactJS, Next.js, Sass, Figma. Aussi, pour la première fois, j'ai implémenté la commutation dynamique des langues.",
+    "cv": {
+      "name": "Valeriya Kozlova",
+      "location": "Belgium / Russia",
+      "language": {
+        "eng": "English - upper intermedaite",
+        "fr": "French - upper intermedaite",
+        "ru": "Russian - native"
+      },
+    },
   },
 };

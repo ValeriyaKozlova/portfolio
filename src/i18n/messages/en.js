@@ -28,6 +28,45 @@ export default {
     "ANCUBATOR": "It is my first personal project as a freelancer - a very simple site. Technologies: HTML, Bootstrap, Figma, Mailchimp",
     "Blooming Riders": "This was the first really difficult project as it consisted of developing an lms system from scratch. The first part of the project is an administrative system through which it is possible to create courses with lessons, verification tests, articles, promotions, subscriptions, user polls. The second part is the platform itself. Here it was implemented: a user's personal account with access to the site's functionality depending on the user's level, a payment system, an authorization system using tokens. Technologies: JS, ReactJS, Next.js, Sass.",
     "Korina": "My own business - an Korean cosmetics online shop. The first part of the project is an administrative system with which you can manage brands, products, orders. The second part is the store. Implemented here: user's personal account, payment system, authorization system using tokens, changing languages ​​using the i18n plugin. Technologies: JS, ReactJS, Next.js, Sass.",
-    "JobSwap": "The second project that I have done as a freelancer. The project included the development of both the site itself and the administrative panel. I have created the entire frontend. Technologies: ReactJS, Next.js, Sass, Figma. Also for the first time I have implemented dynamic language switching."
+    "JobSwap": "The second project that I have done as a freelancer. The project included the development of both the site itself and the administrative panel. I have created the entire frontend. Technologies: ReactJS, Next.js, Sass, Figma. Also for the first time I have implemented dynamic language switching.",
+    "cv-name": "Valeriya Kozlova",
+    "cv": {
+      "name": "Valeriya Kozlova",
+      "location": "Belgium / Russia",
+      "language": {
+        "eng": "English - upper intermedaite",
+        "fr": "French - upper intermedaite",
+        "ru": "Russian - native"
+      },
+      "education": {
+        "tourism": {
+          "place": "Altai State Technical University,",
+          "ville": "Barnaul, Russia,",
+          "date": "2009-2014",
+          "content": "Master's degree. Tourisme."
+        },
+        "english": {
+          "place": "Altai State Technical University,",
+          "ville": "Barnaul, Russia,",
+          "date": "2011-2014",
+          "content": "Evening classes. Professional communication interpreter (English)."
+        },
+        "techno": {
+          "place": "Technofutur TIC,",
+          "ville": "Charleroi, Belgique,",
+          "date": "2019",
+          "content": "Distance learning. Introduction to HTML, JavaScript, PHP."
+        },
+        "becode": {
+          "place": "BeCode,",
+          "ville": "Charleroi, Belgique,",
+          "date": "2019-2020",
+          "content": "7 months training in front-end development (HTML, CSS, Javascript), back-end development (PHP, SQL, Adminer, nodejs), systems administration (Linux), project management."
+        }
+      },
+      "experience": {
+        "": "",
+      }
+    }
   },
 };

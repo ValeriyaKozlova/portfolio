@@ -1,14 +1,10 @@
 import React, { useState } from 'react'
 import { Switch, Route } from 'react-router-dom'
-import Education from './components/Education'
-import Projects from './components/Projects'
-import About from './components/About'
 import './styles/App.scss'
+import Home from './pages/Home'
+import CvValeriya from './pages/CvValeriya'
 import Navbar from './components/Navbar'
 import { I18nProvider, LOCALES } from './i18n'
-import Footer from './components/Footer'
-import GreetingArea from './components/GreetingArea'
-import Contacts from './components/Contacts'
 
 function App() {
   const [activeLangue, setActiveLangue] = useState(LOCALES.ENGLISH)
@@ -19,14 +15,14 @@ function App() {
         activeLangue={activeLangue}
         setActiveLangue={setActiveLangue}
       />
-      <main>
-        <GreetingArea />
-        <About />
-        <Education />
-        <Projects />
-        <Contacts />
-      </main>
-      <Footer />
+      <Switch>
+        <Route path="/cv-valeriya">
+          <CvValeriya />
+        </Route>
+        <Route exact path="/">
+          <Home />
+        </Route>
+      </Switch>
     </I18nProvider>
   )
 }

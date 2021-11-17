@@ -19,24 +19,24 @@
       overflow: hidden;
       .nextHeading {
         opacity: 0;
-        animation: opacity 0.2s linear 0s forwards;
+        animation: opacity 0.2s ease 0s forwards;
       }
       .nextText {
         opacity: 0;
-        animation: opacity 0.2s linear 0.2s forwards;
+        animation: opacity 0.2s ease 0.2s forwards;
       }
       .nextVisit {
         opacity: 0;
-        animation: opacity 0.2s linear 0.4s forwards;
+        animation: opacity 0.2s ease 0.4s forwards;
       }
       .prevHeading {
-        animation: translate 0.2s linear 0s forwards;
+        animation: translate 0.2s ease 0s forwards;
       }
       .prevText {
-        animation: translate 0.2s linear 0.2s forwards;
+        animation: translate 0.2s ease 0.2s forwards;
       }
       .prevVisit {
-        animation: translate 0.2s linear 0.4s forwards;
+        animation: translate 0.2s ease 0.4s forwards;
       }
       h3 {
         padding-top: 20px;
@@ -45,12 +45,12 @@
         font-size: 4rem;
       }
       .logos {
-        transition: all 0.6s;
+        transition: all 0.2s;
         .logo {
           height: 250px;
           display: flex;
           align-self: center;
-          transition: all 0.3s;
+          transition: all 0.2s;
           svg {
             width: 100%;
           }
@@ -65,7 +65,7 @@
       margin-bottom: 30px;
       padding: 0;
       color: $light-color;
-      transition: all 0.5s;
+      transition: all 0.3s;
       display: flex;
       flex-direction: column;
       justify-content: space-around;
@@ -78,7 +78,10 @@
         text-decoration: none;
         color: $light-color;
         text-transform: uppercase;
-        font-weight: bold;
+        &:hover {
+          color: $rose-color;
+          text-decoration: underline;
+        }
       }
     }
     .buttons {
@@ -91,7 +94,7 @@
           width: 5px;
           margin: 10px;
           border-radius: 8px;
-          transition: all 0.3s;
+          transition: all 0.15s;
           display: flex;
           align-items: center;
           justify-content: center;

@@ -10,37 +10,45 @@
     color: $light-color;
     text-decoration: none;
     margin: 5px;
-    transition: all .2s;
+    transition: all 0.2s;
   }
   .cv {
     a {
       margin: 5px 20px;
     }
   }
-  .cv, .email {
-    transition: all .5s;
+  .cv,
+  .email {
+    transition: all 0.5s;
     a {
       &:hover {
         color: $rose-color;
       }
     }
-
   }
-  .social, .cv, .email {
+  .social,
+  .cv,
+  .email {
     display: flex;
     justify-content: center;
     margin-top: 25px;
   }
-.social {
-
-  a {
-    width: 50px;
-    height: 50px;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    background: $rose-color;
+  .social {
+    a {
+      width: 50px;
+      height: 50px;
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+      // background: $rose-color;
+      transition: all 0.2s;
+      border: 2px solid $light-color;
+      &:hover {
+        transform: scale(1.2);
+        background: $rose-color;
+        border-color: $rose-color;
+      }
+    }
   }
-}
 }

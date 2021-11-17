@@ -23,11 +23,11 @@ export default {
     "description-becode": "Formation de 7 mois en développement front-end (HTML, CSS, Javascript), développement back-end (PHP, SQL, Adminer), administration de systèmes (Linux), gestion de projet. Auto-apprentissage, autonomie, travail d'équipe.",
     "description-technofuture": "Introduction aux HTML, JavaScript, PHP",
     "date-blooming": "Avril 2020 - Juillet 2020 ; Janvier 2021 - Février 2021",
-    "description-blooming": "Développement front-end de la plateforme lms (reactJS, gatsbyJS, nodeJS, Redis, SASS)",
+    "description-blooming": "Développement front-end de la plateforme lms (reactJS, gatsbyJS, nodeJS, SASS)",
     "A6K": "C'était un projet de groupe pendant mes études. Le site fonctionne déjà depuis un certain temps, mais nous avons résolus beaucoup de petits problèmes. J'ai travaillé avec JS (créer des animations, réécrire des fonctions, analyser le code pour supprimer les fonctions inutilisées), mais comme le site a été créé avec WordPress, j'ai fait du code en PHP et utilisé certaines fonctionnalités de WordPress, MySQL, Adminer.",
-    "ANCUBATOR": "C'est mon premier projet personnel - un site très simple. Technologies: HTML, Bootstrap, Figma, Mailchimp",
-    "Blooming Riders": "Je travaille sur ce projet en ce moment :) Technologies: reactjs, gatsbyjs, react-redux, redis, CSS, SASS.",
-    "Korina": "my project",
-    "JobSwap": "jobswap"
+    "ANCUBATOR": "C'est mon premier projet personnel en tant que freelance - un site très simple. Technologies: HTML, Bootstrap, Figma, Mailchimp",
+    "Blooming Riders": "Ce fut le premier projet vraiment difficile car il consistait à développer un système lms à partir de zéro. La première partie du projet est un système administratif à travers lequel il est possible de créer des cours avec des leçons, des tests de vérification, des articles, des promotions, des abonnements, des sondages d'utilisateurs. La deuxième partie est la plate-forme elle-même. C'est ici qu'il a été mis en place : un compte utilisateur personnel avec accès aux fonctionnalités du site selon le niveau de l'utilisateur, un système de paiement a été mis en place, un système d'autorisation par jetons. Technologies : JS, ReactJS, Next.js, Sass",
+    "Korina": "Ma propre entreprise est une boutique en ligne de cosmétiques coréens. La première partie du projet est un système administratif avec lequel vous pouvez gérer les marques, les produits, suivre les commandes. La deuxième partie est le magasin. Ici mis en œuvre : compte personnel de l'utilisateur, système de paiement, système d'autorisation par tokens, changement de langue à l'aide du plugin i18n. Technologies : JS, ReactJS, Next.js, Sass.",
+    "JobSwap": "Le deuxième projet que j'ai réalisé en tant qu'indépendant. Le projet comprenait le développement du site lui-même et du panneau administratif. J'ai implémenté l'intégralité du frontend. Technologies : ReactJS, Next.js, Sass, Figma. Aussi, pour la première fois, j'ai implémenté la commutation dynamique des langues."
   },
 };

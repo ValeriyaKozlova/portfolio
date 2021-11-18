@@ -7,7 +7,8 @@ import Navbar from './components/Navbar'
 import { I18nProvider, LOCALES } from './i18n'
 
 function App() {
-  const [activeLangue, setActiveLangue] = useState(LOCALES.ENGLISH)
+  const [activeLangue, setActiveLangue] = useState(localStorage.getItem('language') ||
+    LOCALES.ENGLISH)
   return (
     <I18nProvider locale={activeLangue}>
       <Navbar

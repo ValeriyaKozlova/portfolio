@@ -33,7 +33,7 @@ export default {
     "cv-post": "Développeur Frontend",
     "cv-location": "Belgique / Russie",
     "cv-skills": "Compétence",
-    "cv-perso-skills": "capacité à travailler à la fois en équipe et de manière autonome, auto-apprentissage rapide",
+    "cv-perso-skills": "Capacité à travailler à la fois en équipe et de manière autonome, auto-apprentissage rapide",
     "eng": "Anglais - upper intermedaite",
     "fr": "Français - upper intermedaite",
     "ru": "Russe - natif",
@@ -60,5 +60,6 @@ export default {
     "cv-Blooming-Riders": "Développement un système lms à partir de zéro. La première partie du projet est un système administratif à travers lequel il est possible de créer des cours avec des leçons, des tests de vérification, des articles, des promotions, des abonnements, des sondages d'utilisateurs. La deuxième partie est la plate-forme elle-même. C'est ici qu'il a été mis en place : un compte utilisateur personnel avec accès aux fonctionnalités du site selon le niveau de l'utilisateur, un système de paiement a été mis en place, un système d'autorisation par jetons.",
     "date-ANCUBATOR": "Octobre 2019",
     "cv-JobSwap": "Le projet comprenait le développement du site lui-même et du panneau administratif. J'ai implémenté l'intégralité du frontend. Technologies : ReactJS, Next.js, Sass, Figma. Aussi, pour la première fois, j'ai implémenté la commutation dynamique des langues.",
+    "date-JobSwap": "Septembre - Octobre 2020",
   },
 };

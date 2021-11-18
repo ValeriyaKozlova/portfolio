@@ -25,6 +25,11 @@ function Navbar({ activeLangue, setActiveLangue }) {
     }
   }, [])
 
+  const handleLang = (lang) => {
+    setActiveLangue(lang)
+    localStorage.setItem('language', lang)
+  }
+
   return (
     <header ref={ref}>
       <nav className="navbar">
@@ -60,19 +65,19 @@ function Navbar({ activeLangue, setActiveLangue }) {
         <div className="buttons">
           <button
             className={activeLangue === "en" ? "activeLangue" : ""}
-            onClick={() => setActiveLangue(LOCALES.ENGLISH)}
+            onClick={() => handleLang(LOCALES.ENGLISH)}
           >
             EN
         </button>
           <button
             className={activeLangue === "fr" ? "activeLangue" : ""}
-            onClick={() => setActiveLangue(LOCALES.FRENCH)}
+            onClick={() => handleLang(LOCALES.FRENCH)}
           >
             FR
         </button>
           <button
             className={activeLangue === "ru" ? "activeLangue" : ""}
-            onClick={() => setActiveLangue(LOCALES.RUSSIAN)}
+            onClick={() => handleLang(LOCALES.RUSSIAN)}
           >
             RU
         </button>

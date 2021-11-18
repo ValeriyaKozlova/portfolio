@@ -28,45 +28,42 @@ export default {
     "ANCUBATOR": "It is my first personal project as a freelancer - a very simple site. Technologies: HTML, Bootstrap, Figma, Mailchimp",
     "Blooming Riders": "This was the first really difficult project as it consisted of developing an lms system from scratch. The first part of the project is an administrative system through which it is possible to create courses with lessons, verification tests, articles, promotions, subscriptions, user polls. The second part is the platform itself. Here it was implemented: a user's personal account with access to the site's functionality depending on the user's level, a payment system, an authorization system using tokens. Technologies: JS, ReactJS, Next.js, Sass.",
     "Korina": "My own business - an Korean cosmetics online shop. The first part of the project is an administrative system with which you can manage brands, products, orders. The second part is the store. Implemented here: user's personal account, payment system, authorization system using tokens, changing languages ​​using the i18n plugin. Technologies: JS, ReactJS, Next.js, Sass.",
+    "date-JobSwap": "Septembre - Octobre 2020",
     "JobSwap": "The second project that I have done as a freelancer. The project included the development of both the site itself and the administrative panel. I have created the entire frontend. Technologies: ReactJS, Next.js, Sass, Figma. Also for the first time I have implemented dynamic language switching.",
     "cv-name": "Valeriya Kozlova",
-    "cv": {
-      "name": "Valeriya Kozlova",
-      "location": "Belgium / Russia",
-      "language": {
-        "eng": "English - upper intermedaite",
-        "fr": "French - upper intermedaite",
-        "ru": "Russian - native"
-      },
-      "education": {
-        "tourism": {
-          "place": "Altai State Technical University,",
-          "ville": "Barnaul, Russia,",
-          "date": "2009-2014",
-          "content": "Master's degree. Tourisme."
-        },
-        "english": {
-          "place": "Altai State Technical University,",
-          "ville": "Barnaul, Russia,",
-          "date": "2011-2014",
-          "content": "Evening classes. Professional communication interpreter (English)."
-        },
-        "techno": {
-          "place": "Technofutur TIC,",
-          "ville": "Charleroi, Belgique,",
-          "date": "2019",
-          "content": "Distance learning. Introduction to HTML, JavaScript, PHP."
-        },
-        "becode": {
-          "place": "BeCode,",
-          "ville": "Charleroi, Belgique,",
-          "date": "2019-2020",
-          "content": "7 months training in front-end development (HTML, CSS, Javascript), back-end development (PHP, SQL, Adminer, nodejs), systems administration (Linux), project management."
-        }
-      },
-      "experience": {
-        "": "",
-      }
-    }
+    "cv-post": "Frontend developer",
+    "cv-location": "Belgium / Russia",
+    "cv-skills": "Skills",
+    "cv-perso-skills": "ability to work both in a team and autonomously, quick self-learning",
+    "eng": "English - upper intermedaite",
+    "fr": "French - upper intermedaite",
+    "ru": "Russian - native",
+    "cv-education": "Education",
+    "tourism-place": "Altai State Technical University",
+    "tourism-ville": "Barnaul, Russia",
+    "tourism-date": "2009-2014",
+    "tourism-content": "Master's degree. Tourism.",
+    "english-place": "Altai State Technical University",
+    "english-ville": "Barnaul, Russia",
+    "english-date": "2011-2014",
+    "english-content": "Evening classes. Professional communication interpreter (English).",
+    "techno-place": "Technofutur TIC",
+    "techno-ville": "Charleroi, Belgium",
+    "techno-date": "2019",
+    "techno-content": "Distance learning. Introduction to HTML, JavaScript, PHP.",
+    "becode-place": "BeCode",
+    "becode-ville": "Charleroi, Belgium",
+    "becode-date": "2019-2020",
+    "becode-content": "7 months training in front-end development (HTML, CSS, Javascript), back-end.",
+    "experience": "Experience",
+    "belgium": "Belgium",
+    "cv-ANCUBATOR": "Landing page for one start-up. Technologies: HTML, Bootstrap, Figma, Mailchimp.",
+    "cv-Blooming-Riders": "Developing an lms system from scratch. The first part of the project is an administrative system through which it is possible to create courses with lessons, verification tests, articles, promotions, subscriptions, user polls. The second part is the platform itself. Here it was implemented: a user's personal account with access to the site's functionality depending on the user's level, a payment system, an authorization system using tokens. Technologies: JS, ReactJS, Next.js, Sass.",
+    "date-ANCUBATOR": "October 2019",
+    "cv-JobSwap": "The project included the development of both the site itself and the administrative panel. I have created the entire frontend. Technologies: ReactJS, Next.js, Sass, Figma. Also for the first time I have implemented dynamic language switching.",
+
+    // умение работать как в команде, так и автономно, быстрое самообучение
+    // capacité à travailler à la fois en équipe et de manière autonome, auto-apprentissage rapide
+    // Сентябрь - Октябрь 2020
   },
 };

@@ -1,3 +1,107 @@
-#cv {
-  background: gray;
+@import '../variables/colors/_colors.scss';
+
+.cv-container {
+  position: relative;
+  margin-top: -80px;
+  h3 {
+    margin-top: 20px;
+    text-transform: uppercase;
+  }
+  .bg-clip {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    clip-path: polygon(0 0, 100% 0, 0% 100%, 0% 100%);
+    background: $rose-dark;
+    z-index: -5;
+  }
+  #cv {
+    background: $light-color;
+    position: relative;
+    padding: 25px;
+    padding-top: 120px;
+    color: $rose-dark;
+    .bg {
+      position: absolute;
+      width: 100%;
+      top: 0;
+      right: 0;
+      background: $rose-dark;
+      height: 80px;
+    }
+    .cv-header {
+      border-bottom: 2px solid $rose-color;
+      h1,
+      h2 {
+        text-align: center;
+      }
+      h1 {
+        font-weight: bold;
+      }
+      .social {
+        display: flex;
+        justify-content: center;
+        margin: 30px 0;
+        a {
+          width: 40px;
+          height: 40px;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          background: $rose-color;
+          font-size: 1.5rem;
+          color: $light-color;
+          margin: 5px;
+        }
+      }
+      .cv-contact {
+        display: flex;
+        justify-content: space-around;
+        a {
+          color: $rose-dark;
+        }
+      }
+    }
+    #photo {
+      background-image: url('/my_photo.jpg');
+      width: 250px;
+      height: 250px;
+      border-radius: 50%;
+      background-size: cover;
+      background-position: top;
+    }
+    .skills {
+      ul {
+        list-style-type: none;
+        padding-left: 0;
+        li {
+          display: inline-block;
+          margin-right: 5px;
+          &::after {
+            content: ' - ';
+          }
+          &:last-of-type {
+            &::after {
+              content: '';
+            }
+          }
+        }
+      }
+    }
+    .cv-education,
+    .cv-experience {
+      div {
+        margin: 15px 0;
+        p {
+          margin-bottom: 5px;
+          &:first-child {
+            font-weight: bold;
+          }
+        }
+        a {
+          color: $rose-color;
+        }
+      }
+    }
+  }
 }

@@ -8,7 +8,6 @@ import { I18nProvider, LOCALES } from './i18n'
 
 function App() {
   const [activeLangue, setActiveLangue] = useState(LOCALES.ENGLISH)
-
   return (
     <I18nProvider locale={activeLangue}>
       <Navbar

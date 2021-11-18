@@ -1,8 +1,12 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import '../styles/pages/cv.scss'
 import translate from "../i18n/translate";
 
 export default function CvValeriya() {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, [])
+
   return (
     <main>
       <div className="cv-container">

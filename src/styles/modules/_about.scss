@@ -1,21 +1,41 @@
 @import '../variables/colors/_colors.scss';
 
-#about {
-  .skills {
-    ul {
-      list-style-type: none;
-      display: flex;
-      padding-left: 0;
-      color: $light-color;
-      li {
-        margin: 5px 10px;
-        padding: 5px 10px;
-        font-size: 1.2rem;
-        background: $rose-dark;
+.aboutContainer {
+  background: $light-color;
+  #about {
+    .skills {
+      ul {
+        list-style-type: none;
+        display: flex;
+        padding-left: 0;
+        color: $light-color;
+        li {
+          margin: 5px 10px;
+          padding: 5px 10px;
+          font-size: 1.2rem;
+          background: $rose-dark;
+        }
       }
     }
+    #message {
+      font-size: 1.2rem;
+    }
   }
-  #message {
-    font-size: 1.2rem;
+}
+
+@media (max-width: 792px) {
+  #about {
+    .skills {
+      ul {
+        flex-wrap: wrap;
+        color: $light-color;
+        li {
+          font-size: 1rem;
+        }
+      }
+    }
+    #message {
+      font-size: 1rem;
+    }
   }
 }

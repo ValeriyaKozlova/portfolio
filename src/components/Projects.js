@@ -45,6 +45,9 @@ const Projects = () => {
               />
             })
           }
+          {/* <div className="col-1 buttons offset-lg-2 ">
+              <ListOfProjects changeProject={changeProject} project={project} />
+            </div> */}
           <div
             className="col-3 logos"
             style={{
@@ -54,7 +57,7 @@ const Projects = () => {
           >
             <ListOfLogos project={project} />
           </div>
-          <div className="col-1 buttons offset-2 ">
+          <div className="col-1 buttons offset-lg-2 ">
             <ListOfProjects changeProject={changeProject} project={project} />
           </div>
         </div>

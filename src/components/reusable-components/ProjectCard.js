@@ -9,7 +9,7 @@ function ProjectCard({
 }) {
 
   return (
-    <div className="col-6 info" key={title}>
+    <div className="col-7 col-lg-6 info" key={title}>
       <h3
         className={className ? "prevHeading" : "nextHeading"}
       >

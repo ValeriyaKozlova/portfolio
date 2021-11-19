@@ -43,14 +43,14 @@ const Education = () => {
         <div className="row educationContainer">
           <div className="container profPath ">
             <div className="row">
-              <div className="col-12 offset-6 col-lg-6 workContainer interact">
+              <div className="col-12 offset-md-6 col-md-6 workContainer interact">
                 <h3>Technofuture TIC</h3>
                 <p>2019, {translate("country")}</p>
                 <p>{translate("description-technofuture")} </p>
               </div>
             </div>
             <div className="row">
-              <div className="col-12 col-lg-6 workContainer interact even">
+              <div className="col-12 col-md-6 workContainer interact even">
                 <h3>BeCode</h3>
                 <p>
                   {translate("date-becode")}, {translate("country-city")}
@@ -59,7 +59,7 @@ const Education = () => {
               </div>
             </div>
             <div className="row">
-              <div className="col-12 col-lg-6 offset-6 workContainer interact">
+              <div className="col-12 col-md-6 offset-md-6 workContainer interact">
                 <h3>Blooming riders</h3>
                 <p>
                   {translate("date-blooming")}, {translate("country")}
@@ -68,7 +68,7 @@ const Education = () => {
               </div>
             </div>
             <div className="row">
-              <div className="col-12 col-lg-6 workContainer interact even">
+              <div className="col-12 col-md-6 workContainer interact even">
                 <h3>Korina.be</h3>
                 <p>
                   {translate("date-korina")}, {translate("country-city")}

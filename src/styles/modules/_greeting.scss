@@ -55,36 +55,37 @@
 }
 
 @media (max-width: 767px) {
-  #about,
-  .navbar-nav {
-    min-height: auto;
-  }
-  .navbar-nav {
-    align-items: start;
-  }
-  .Navigation {
-    flex-direction: row;
-    margin-bottom: 20px;
-  }
-  button,
-  .Navigation a {
-    font-size: 1rem;
-    margin: 5px;
-  }
-  #contact {
-    text-align: left;
-  }
-  .skills {
-    margin-top: 1rem;
-  }
-  .skills ul li {
-    font-size: 0.8rem;
-  }
-  .workContainer {
-    margin: 15px 10px;
-  }
-  .message {
-    margin-top: 1rem;
-    padding: 0;
+  .greetingArea {
+    margin-top: -80px;
+    position: relative;
+    overflow: hidden;
+    padding-top: 0;
+    #greeting {
+      h1 {
+        span {
+          color: $rose-color;
+          font-weight: 600;
+        }
+      }
+      button {
+        margin: auto;
+        border: 1px solid $light-color;
+        padding: 5px 15px;
+        margin-top: 25px;
+        transition: all 0.2s;
+        a {
+          color: $light-color;
+          letter-spacing: 1px;
+          font-weight: 200;
+          font-size: 1.5rem;
+          text-decoration: none;
+        }
+        &:hover {
+          border-color: $rose-color;
+          background-color: $rose-color;
+          transform: scale(1.1);
+        }
+      }
+    }
   }
 }

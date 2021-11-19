@@ -14,7 +14,7 @@ export default function CvValeriya() {
         <div className="container" id="cv">
           <div className="bg"></div>
           <div className="row">
-            <div className="col-8 cv-header">
+            <div className="col-12 col-md-8 cv-header">
               <h1>{translate(`cv-name`)}</h1>
               <h2>{translate(`cv-post`)}</h2>
               <div className="social">
@@ -42,13 +42,13 @@ export default function CvValeriya() {
                 <p>{translate(`cv-location`)}</p>
               </div>
             </div>
-            <div className="col-4">
+            <div className="col-12 col-md-4">
               <div id="photo"></div>
             </div>
           </div>
-          <div className="row">
+          <div className="row info">
             <h3 className="col-12">{translate(`cv-skills`)}</h3>
-            <div className="col-5 skills">
+            <div className="col-12 col-md-5 skills">
               <ul>
                 <li>JavaScript</li>
                 <li>TypeScript</li>
@@ -74,8 +74,8 @@ export default function CvValeriya() {
                 <li>Figma</li>
               </ul>
             </div>
-            <div className="col-3">{translate(`cv-perso-skills`)}</div>
-            <div className="col-4">
+            <div className="col-12 col-md-3">{translate(`cv-perso-skills`)}</div>
+            <div className="col-12 col-md-4">
               <p>{translate(`eng`)}</p>
               <p>{translate(`fr`)}</p>
               <p>{translate(`ru`)}</p>

@@ -1,12 +1,14 @@
-import React, { useLayoutEffect, useRef } from "react";
+import React, { useEffect, useLayoutEffect, useRef, useState } from "react";
 import { NavHashLink } from 'react-router-hash-link';
 import { LOCALES } from "../i18n";
 import translate from "../i18n/translate";
-import { scrollWithOffset } from "../utils/scroll";
 import Logo from "./Logo";
+import ButtonToggle from "./reusable-components/Button-toggle";
+
 
 function Navbar({ activeLangue, setActiveLangue }) {
   const ref = useRef(null)
+  const [mobileNavOpen, setMobileNavOpen] = useState(false)
 
   useLayoutEffect(() => {
     let active = false
@@ -30,61 +32,99 @@ function Navbar({ activeLangue, setActiveLangue }) {
     localStorage.setItem('language', lang)
   }
 
+  const handleOpenNav = () => {
+    setMobileNavOpen(prev => !prev)
+  }
+
+  useEffect(() => {
+    console.log('useEffect')
+    console.log(mobileNavOpen)
+    mobileNavOpen ? document.body.style.overflow = "hidden" : document.body.style.overflow = "visible";
+    mobileNavOpen ? console.log('no scroll') : console.log('scroll');
+  }, [mobileNavOpen])
+
+  const scrollWithOffset = (el) => {
+    const yCoordinate = el.getBoundingClientRect().top + window.pageYOffset;
+    const yOffset = -80;
+    setMobileNavOpen(prev => !prev)
+    window.scrollTo({ top: yCoordinate + yOffset, behavior: 'smooth' });
+  }
+
   return (
-    <header ref={ref}>
-      <nav className="navbar-expand-md navbar">
-        <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
-          <span className="navbar-toggler-icon"></span>
+    <header ref={ref} className={mobileNavOpen ? 'blocked' : 'unBlocked'}>
+      <nav className="navbar">
+        <button onClick={() => handleOpenNav()} className="navbar-button" aria-label="Toggle navigation">
+          <span><ButtonToggle /></span>
         </button>
-        <div className="collapse navbar-collapse" id="navbarTogglerDemo01">
+        <NavHashLink
+          smooth
+          to="/#"
+        >
+          <Logo />
+        </NavHashLink>
+        <div className="navigation">
+          <NavHashLink
+            scroll={el => scrollWithOffset(el)}
+            to="/#about">
+            {translate("nav-about")}
+          </NavHashLink>
+          <NavHashLink
+            scroll={el => scrollWithOffset(el)}
+            to="/#education">
+            {translate("nav-exp")}
+          </NavHashLink>
+          <NavHashLink
+            scroll={el => scrollWithOffset(el)}
+            to="/#projects">
+            {translate("nav-projects")}
+          </NavHashLink>
           <NavHashLink
             smooth
-            to="/#"
-          >
-            <Logo />
+            to="/#contacts">
+            {translate("contacts")}
           </NavHashLink>
-          <div className="navigation" id="navbar">
-            <NavHashLink
-              scroll={el => scrollWithOffset(el)}
-              to="/#about">
-              {translate("nav-about")}
-            </NavHashLink>
-            <NavHashLink
-              scroll={el => scrollWithOffset(el)}
-              to="/#education">
-              {translate("nav-exp")}
-            </NavHashLink>
-            <NavHashLink
-              scroll={el => scrollWithOffset(el)}
-              to="/#projects">
-              {translate("nav-projects")}
-            </NavHashLink>
-            <NavHashLink
-              smooth
-              to="/#contacts">
-              {translate("contacts")}
-            </NavHashLink>
-          </div>
-          <div className="buttons">
-            <button
-              className={activeLangue === "en" ? "activeLangue" : ""}
-              onClick={() => handleLang(LOCALES.ENGLISH)}
-            >
-              EN
+        </div>
+        <div className={mobileNavOpen ? "mobile-navigation open" : "mobile-navigation closed"}>
+          <NavHashLink
+            scroll={el => scrollWithOffset(el)}
+            to="/#about">
+            {translate("nav-about")}
+          </NavHashLink>
+          <NavHashLink
+            scroll={el => scrollWithOffset(el)}
+            to="/#education">
+            {translate("nav-exp")}
+          </NavHashLink>
+          <NavHashLink
+            scroll={el => scrollWithOffset(el)}
+            to="/#projects">
+            {translate("nav-projects")}
+          </NavHashLink>
+          <NavHashLink
+            scroll={el => scrollWithOffset(el)}
+            to="/#contacts">
+            {translate("contacts")}
+          </NavHashLink>
+        </div>
+        <div className="buttons">
+          <button
+            className={activeLangue === "en" ? "activeLangue" : ""}
+            onClick={() => handleLang(LOCALES.ENGLISH)}
+          >
+            EN
         </button>
-            <button
-              className={activeLangue === "fr" ? "activeLangue" : ""}
-              onClick={() => handleLang(LOCALES.FRENCH)}
-            >
-              FR
+          <button
+            className={activeLangue === "fr" ? "activeLangue" : ""}
+            onClick={() => handleLang(LOCALES.FRENCH)}
+          >
+            FR
         </button>
-            <button
-              className={activeLangue === "ru" ? "activeLangue" : ""}
-              onClick={() => handleLang(LOCALES.RUSSIAN)}
-            >
-              RU
+          <button
+            className={activeLangue === "ru" ? "activeLangue" : ""}
+            onClick={() => handleLang(LOCALES.RUSSIAN)}
+          >
+            RU
         </button>
-          </div>
         </div>
       </nav>
     </header>

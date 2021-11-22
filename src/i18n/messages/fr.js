@@ -7,7 +7,7 @@ export default {
     "nav-projects": "Mes projects",
     "download": "télécharger mon CV",
     "view-cv": "Voir mon CV",
-    "contacts": "contacts",
+    "contacts": "Contacts",
     "button-visitSite": "Visitez le site",
     "greeting-1": "Salut!",
     "greeting-2": "Je suis Valeriya,",

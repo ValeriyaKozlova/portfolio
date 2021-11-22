@@ -1,7 +1,6 @@
 @import '../variables/colors/_colors.scss';
 
 #contacts {
-  // background: $rose-dark;
   h2 {
     color: $light-color;
   }
@@ -41,13 +40,36 @@
       flex-direction: row;
       justify-content: center;
       align-items: center;
-      // background: $rose-color;
       transition: all 0.2s;
       border: 2px solid $light-color;
       &:hover {
         transform: scale(1.2);
         background: $rose-color;
         border-color: $rose-color;
+      }
+    }
+  }
+}
+
+@media (max-width: 767px) {
+  #contacts {
+    a {
+      font-size: 1rem;
+    }
+    .cv {
+      a {
+        margin: 5px 10px;
+      }
+    }
+    .social,
+    .cv,
+    .email {
+      margin-top: 20px;
+    }
+    .social {
+      a {
+        width: 40px;
+        height: 40px;
       }
     }
   }

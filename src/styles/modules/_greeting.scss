@@ -61,6 +61,9 @@
     overflow: hidden;
     padding-top: 0;
     #greeting {
+      width: 250px;
+      top: calc(50% - 50px);
+      right: calc(50% - 125px);
       h1 {
         span {
           color: $rose-color;

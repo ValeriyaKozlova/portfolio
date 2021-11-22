@@ -21,46 +21,6 @@ section {
   padding: 50px 0;
 }
 
-header {
-  position: -webkit-sticky; /* Safari */
-  position: sticky;
-  top: 0;
-  width: 100%;
-  height: 80px;
-  z-index: 100;
-  transition: all 0.2s;
-  &.active {
-    background-color: $black-color;
-    backdrop-filter: blur(10px);
-  }
-  .navbar {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding-right: 30px;
-    padding-left: 30px;
-    flex-wrap: nowrap;
-    .navigation {
-      display: flex;
-      align-items: center;
-      transition: all 0.3s;
-      a {
-        color: $light-color;
-        text-transform: uppercase;
-        font-size: 1.2rem;
-        font-weight: 200;
-        margin: 0 15px;
-        letter-spacing: 1px;
-        text-decoration: none;
-        transition: all 0.2s;
-        &:hover {
-          color: $rose-color;
-        }
-      }
-    }
-  }
-}
-
 button {
   color: $light-color;
   background: none;
@@ -120,21 +80,22 @@ footer {
 @import './modules/_education.scss';
 @import './modules/_about.scss';
 @import './modules/_greeting.scss';
+@import './modules/_header.scss';
 
-@media (max-width: 792px) {
+@media (max-width: 767px) {
   h1 {
     font-size: 1.5rem;
   }
-  header {
-    .navbar {
-      padding-right: 15px;
-      padding-left: 15px;
-      flex-wrap: nowrap;
-      .navigation {
-        a {
-          font-size: 1 rem;
-        }
-      }
-    }
+  h2 {
+    font-size: 1.2rem;
+  }
+  section {
+    padding: 35px 0;
+  }
+}
+
+@media (min-width: 768px) {
+  h1 {
+    font-size: 1.5rem;
   }
 }

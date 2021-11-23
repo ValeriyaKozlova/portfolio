@@ -1,5 +1,4 @@
 import React, { useEffect } from 'react'
-import Contacts from "../components/Contacts"
 import '../styles/pages/cv.scss'
 import translate from "../i18n/translate";
 

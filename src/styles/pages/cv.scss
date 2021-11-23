@@ -63,7 +63,7 @@
       }
     }
     #photo {
-      background-image: url('/my_photo.jpg');
+      background-image: url('/my_photo.webp');
       width: 250px;
       height: 250px;
       border-radius: 50%;
@@ -167,7 +167,6 @@
 @media print {
   .cv-container {
     #cv {
-      background: #fff;
       padding: 25px;
       padding-top: 120px;
       .bg {

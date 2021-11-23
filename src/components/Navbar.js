@@ -43,7 +43,9 @@ function Navbar({ activeLangue, setActiveLangue }) {
   const scrollWithOffset = (el) => {
     const yCoordinate = el.getBoundingClientRect().top + window.pageYOffset;
     const yOffset = -80;
-    setMobileNavOpen(prev => !prev)
+    if (mobileNavOpen) {
+      setMobileNavOpen(prev => !prev)
+    }
     window.scrollTo({ top: yCoordinate + yOffset, behavior: 'smooth' });
   }
 
@@ -56,6 +58,7 @@ function Navbar({ activeLangue, setActiveLangue }) {
         <NavHashLink
           smooth
           to="/#"
+          aria-label="Home page"
         >
           <Logo />
         </NavHashLink>

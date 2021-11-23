@@ -1,11 +1,15 @@
-$light-color: #f8f6ff;
+$light-color: #fff;
 $secondary-color: #7b40f2;
 $complimentary-color: #5d53f3;
 $background-color: linear-gradient(#b384ec, white);
 $dark-color: #041932;
 $bgproject-color: #d0d7e5;
-$bg-nav-color: rgba(208, 215, 229, .3);
-$rose-color: #ED0077;
-$filter-color: linear-gradient(45deg, rgba(54,22,28,1) 0%, rgba(36,14,19,1) 100%);
-$black-color: rgba(36, 14, 19, .7);
+$bg-nav-color: rgba(208, 215, 229, 0.3);
+$rose-color: #ed0077;
+$filter-color: linear-gradient(
+  45deg,
+  rgba(54, 22, 28, 1) 0%,
+  rgba(36, 14, 19, 1) 100%
+);
+$black-color: rgba(36, 14, 19, 0.7);
 $rose-dark: #240e13;

@@ -61,5 +61,6 @@ export default {
     "cv-Blooming-Riders": "Developing an lms system from scratch. The first part of the project is an administrative system through which it is possible to create courses with lessons, verification tests, articles, promotions, subscriptions, user polls. The second part is the platform itself. Here it was implemented: a user's personal account with access to the site's functionality depending on the user's level, a payment system, an authorization system using tokens. Technologies: JS, ReactJS, Next.js, Sass.",
     "date-ANCUBATOR": "October 2019",
     "cv-JobSwap": "The project included the development of both the site itself and the administrative panel. I have created the entire frontend. Technologies: ReactJS, Next.js, Sass, Figma. Also for the first time I have implemented dynamic language switching.",
+    "not-found-button": "Go back to the main page"
   },
 };

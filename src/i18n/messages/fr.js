@@ -61,5 +61,6 @@ export default {
     "date-ANCUBATOR": "Octobre 2019",
     "cv-JobSwap": "Le projet comprenait le développement du site lui-même et du panneau administratif. J'ai implémenté l'intégralité du frontend. Technologies : ReactJS, Next.js, Sass, Figma. Aussi, pour la première fois, j'ai implémenté la commutation dynamique des langues.",
     "date-JobSwap": "Septembre - Octobre 2020",
+    "not-found-button": "Retour à la page principale"
   },
 };

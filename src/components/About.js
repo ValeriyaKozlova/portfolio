@@ -16,6 +16,8 @@ const About = () => {
               <li>JavaScript</li>
               <li>TypeScript</li>
               <li>Node.js</li>
+              <li>REST</li>
+              <li>GraphQL</li>
             </ul>
             <ul>
               <li>ReactJS</li>

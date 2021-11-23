@@ -37,10 +37,7 @@ function Navbar({ activeLangue, setActiveLangue }) {
   }
 
   useEffect(() => {
-    console.log('useEffect')
-    console.log(mobileNavOpen)
     mobileNavOpen ? document.body.style.overflow = "hidden" : document.body.style.overflow = "visible";
-    mobileNavOpen ? console.log('no scroll') : console.log('scroll');
   }, [mobileNavOpen])
 
   const scrollWithOffset = (el) => {

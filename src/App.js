@@ -2,6 +2,7 @@ import React, { useState } from 'react'
 import { Switch, Route } from 'react-router-dom'
 import './styles/App.scss'
 import Home from './pages/Home'
+import PageNotFound from './pages/PageNotFound'
 import CvValeriya from './pages/CvValeriya'
 import Navbar from './components/Navbar'
 import { I18nProvider, LOCALES } from './i18n'
@@ -22,7 +23,9 @@ function App() {
         <Route exact path="/">
           <Home />
         </Route>
-        {/* <Route path="*" element={<NotFound />} /> */}
+        <Route path="*">
+          <PageNotFound />
+        </Route>
       </Switch>
     </I18nProvider>
   )

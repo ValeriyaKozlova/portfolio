@@ -5,7 +5,7 @@ export default {
     "nav-about": "Обо мне",
     "nav-exp": "Мой путь",
     "nav-projects": "Мои проекты",
-    "download": "скачать мое CV",
+    "download": "Скачать мое CV",
     "view-cv": "Посмотреть мое CV",
     "contacts": "Контакты",
     'button-visitSite': "Посетить сайт",

@@ -5,7 +5,7 @@ export default {
     "nav-about": "About",
     "nav-exp": "Edu. && EX",
     "nav-projects": "Mes projects",
-    "download": "télécharger mon CV",
+    "download": "Télécharger mon CV",
     "view-cv": "Voir mon CV",
     "contacts": "Contacts",
     "button-visitSite": "Visitez le site",

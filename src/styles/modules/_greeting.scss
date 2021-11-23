@@ -13,6 +13,7 @@
     top: calc(50% - 50px);
     right: calc(50% - 350px);
     text-align: center;
+    z-index: 50;
     h1 {
       color: $light-color;
       text-transform: uppercase;

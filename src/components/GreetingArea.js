@@ -7,7 +7,7 @@ const GreetingArea = () => {
   return (
     <section className="greetingArea">
       <video autoPlay muted loop id="video" >
-        <source src="OMSBG7.mov" type="video/mp4" />
+        <source src="omsbg.mp4" type="video/mp4" />
         <p>Your browser does not support the video tag.</p>
       </video>
       <div id="filter"></div>

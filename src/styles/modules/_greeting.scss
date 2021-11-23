@@ -12,12 +12,9 @@
     width: 700px;
     top: calc(50% - 50px);
     right: calc(50% - 350px);
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+    text-align: center;
     h1 {
       color: $light-color;
-      text-align: center;
       text-transform: uppercase;
       span {
         color: $rose-color;

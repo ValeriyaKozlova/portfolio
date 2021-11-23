@@ -142,7 +142,7 @@
   }
 }
 
-@media (max-width: 792px) {
+@media (max-width: 992px) {
   #projects {
     .clip {
       clip-path: polygon(0 0, 0 0, 0 0, 0 0);
@@ -162,20 +162,25 @@
           overflow: hidden;
         }
         .logos-mobile {
+          display: flex;
           background: $light-color;
+          width: 100vw;
           overflow: hidden;
+          height: 300px;
+          padding: 0;
           .mobileLogoContainer {
             display: flex;
             align-items: center;
             flex-wrap: nowrap;
-            height: 250px;
+            padding: 25px 0px;
             transition: all 0.2s;
             .logo {
-              display: flex;
-              min-width: 60vw;
-              height: 100%;
-              align-items: center;
-              justify-content: center;
+              // display: flex;
+              display: block;
+              width: 60vw;
+              // height: 80%;
+              // align-items: center;
+              // justify-content: center;
               svg {
                 width: 60%;
               }

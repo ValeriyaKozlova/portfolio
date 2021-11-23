@@ -6,7 +6,7 @@ import { scrollWithOffset } from "../utils/scroll";
 const GreetingArea = () => {
   return (
     <section className="greetingArea">
-      <video autoPlay muted loop id="video" >
+      <video autoPlay loop muted playsInline id="video" >
         <source src="omsbg.mp4" type="video/mp4" />
         <p>Your browser does not support the video tag.</p>
       </video>

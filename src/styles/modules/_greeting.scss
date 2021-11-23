@@ -6,6 +6,9 @@
   position: relative;
   overflow: hidden;
   padding-top: 0;
+  #video {
+    z-index: 1;
+  }
   #greeting {
     position: absolute;
     height: 100px;

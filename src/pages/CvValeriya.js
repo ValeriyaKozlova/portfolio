@@ -1,4 +1,5 @@
 import React, { useEffect } from 'react'
+import Contacts from "../components/Contacts"
 import '../styles/pages/cv.scss'
 import translate from "../i18n/translate";
 
@@ -13,7 +14,7 @@ export default function CvValeriya() {
         <div className="bg-clip"></div>
         <div className="container" id="cv">
           <div className="bg"></div>
-          <div className="row">
+          <div className="row cv-header-container">
             <div className="col-12 col-md-8 cv-header">
               <h1>{translate(`cv-name`)}</h1>
               <h2>{translate(`cv-post`)}</h2>
@@ -48,6 +49,8 @@ export default function CvValeriya() {
           </div>
           <div className="row info">
             <h3 className="col-12">{translate(`cv-skills`)}</h3>
+          </div>
+          <div className="row info-container">
             <div className="col-12 col-md-5 skills">
               <ul>
                 <li>JavaScript</li>
@@ -74,6 +77,7 @@ export default function CvValeriya() {
                 <li>Figma</li>
               </ul>
             </div>
+
             <div className="col-12 col-md-3">{translate(`cv-perso-skills`)}</div>
             <div className="col-12 col-md-4">
               <p>{translate(`eng`)}</p>
@@ -116,93 +120,98 @@ export default function CvValeriya() {
               <p>{translate(`tourism-content`)}</p>
             </div>
           </div>
-          <div className="row cv-experience">
+          <div className="row cv-experience" id="print-break">
             <h3 className="col-12">{translate(`experience`)}</h3>
-            <div className="row">
-              <div className="col-4">
-                <p>{translate(`date-korina`)}</p>
-                <p>{translate(`belgium`)}</p>
-              </div>
-              <div className="col-8">
-                <h4>Korina.be</h4>
-                <p>{translate(`cv-post`)}</p>
-                <p>{translate(`Korina`)}</p>
-                <a
-                  href='https://www.korina.be'
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  {translate("button-visitSite")}
-                </a>
-              </div>
-              <div className="col-4">
-                <p>{translate(`date-blooming`)}</p>
-                <p>{translate(`belgium`)}</p>
-              </div>
-              <div className="col-8">
-                <h4>Blooming Riders</h4>
-                <p>{translate(`cv-post`)}</p>
-                <p>{translate(`cv-Blooming-Riders`)}</p>
-                <a
-                  href='https://www.bloomingriders.com'
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  {translate("button-visitSite")}
-                </a>
-              </div>
-              <div className="col-4">
-                <p>{translate(`date-JobSwap`)}</p>
-                <p>{translate(`belgium`)}</p>
-              </div>
-              <div className="col-8">
-                <h4>JobSwap</h4>
-                <p>{translate(`cv-post`)}</p>
-                <p>{translate(`cv-JobSwap`)}</p>
-                <a
-                  href="https://www.jobswap.be"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  {translate("button-visitSite")}
-                </a>
-              </div>
-              <div className="col-4">
-                <p>{translate(`date-ANCUBATOR`)}</p>
-                <p>{translate(`belgium`)}</p>
-              </div>
-              <div className="col-8">
-                <h4>ANCUBATOR</h4>
-                <p>{translate(`cv-post`)}</p>
-                <p>{translate(`cv-ANCUBATOR`)}</p>
-                <a
-                  href="https://www.ancubator.com"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  {translate("button-visitSite")}
-                </a>
-              </div>
-              <div className="col-4">
-                <p>{translate(`date-becode`)}</p>
-                <p>{translate(`belgium`)}</p>
-              </div>
-              <div className="col-8">
-                <h4>A6K</h4>
-                <p>{translate(`cv-post`)}</p>
-                <p>{translate(`A6K`)}</p>
-                <a
-                  href="https://www.a6k.be"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  {translate("button-visitSite")}
-                </a>
-              </div>
+            <div className="col-4">
+              <p>{translate(`date-korina`)}</p>
+              <p>{translate(`belgium`)}</p>
+            </div>
+            <div className="col-8">
+              <h4>Korina.be</h4>
+              <p>{translate(`cv-post`)}</p>
+              <p>{translate(`Korina`)}</p>
+              <a
+                href='https://www.korina.be'
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                {translate("button-visitSite")}
+              </a>
+            </div>
+          </div>
+          <div className="row cv-experience print-padding">
+            <div className="col-4">
+              <p>{translate(`date-blooming`)}</p>
+              <p>{translate(`belgium`)}</p>
+            </div>
+            <div className="col-8">
+              <h4>Blooming Riders</h4>
+              <p>{translate(`cv-post`)}</p>
+              <p>{translate(`cv-Blooming-Riders`)}</p>
+              <a
+                href='https://www.bloomingriders.com'
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                {translate("button-visitSite")}
+              </a>
+            </div>
+            <div className="col-4">
+              <p>{translate(`date-JobSwap`)}</p>
+              <p>{translate(`belgium`)}</p>
+            </div>
+            <div className="col-8">
+              <h4>JobSwap</h4>
+              <p>{translate(`cv-post`)}</p>
+              <p>{translate(`cv-JobSwap`)}</p>
+              <a
+                href="https://www.jobswap.be"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                {translate("button-visitSite")}
+              </a>
+            </div>
+            <div className="col-4">
+              <p>{translate(`date-ANCUBATOR`)}</p>
+              <p>{translate(`belgium`)}</p>
+            </div>
+            <div className="col-8">
+              <h4>ANCUBATOR</h4>
+              <p>{translate(`cv-post`)}</p>
+              <p>{translate(`cv-ANCUBATOR`)}</p>
+              <a
+                href="https://www.ancubator.com"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                {translate("button-visitSite")}
+              </a>
+            </div>
+            <div className="col-4">
+              <p>{translate(`date-becode`)}</p>
+              <p>{translate(`belgium`)}</p>
+            </div>
+            <div className="col-8">
+              <h4>A6K</h4>
+              <p>{translate(`cv-post`)}</p>
+              <p>{translate(`A6K`)}</p>
+              <a
+                href="https://www.a6k.be"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                {translate("button-visitSite")}
+              </a>
             </div>
           </div>
         </div>
       </div>
-    </main>
+      <div className="cv-download">
+        <a href="/images/myw3schoolsimage.jpg" download>
+          {translate("download")}
+        </a>
+      </div>
+    </main >
   )
 }

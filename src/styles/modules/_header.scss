@@ -50,8 +50,6 @@ header {
 @media (max-width: 767px) {
   header {
     height: 60px;
-    // background-color: $black-color;
-    // transition: all 0.2s;
     &.blocked {
       background: $rose-dark;
     }
@@ -149,5 +147,12 @@ header {
         }
       }
     }
+  }
+}
+
+@media print {
+  header {
+    display: none;
+    overflow: hidden;
   }
 }

@@ -4,21 +4,27 @@
   background: $light-color;
   #about {
     .skills {
+      align-self: center;
       ul {
         list-style-type: none;
         display: flex;
         padding-left: 0;
         color: $light-color;
         li {
-          margin: 5px 10px;
-          padding: 5px 10px;
+          margin-right: 10px;
+          padding: 10px 15px;
           font-size: 1.2rem;
           background: $rose-dark;
+          line-height: 1rem;
+          &:last-of-type {
+            margin-right: 0px;
+          }
         }
       }
     }
     #message {
-      font-size: 1.2rem;
+      font-size: 1rem;
+      letter-spacing: 0.2px;
     }
   }
 }
@@ -35,7 +41,7 @@
       }
     }
     #message {
-      font-size: 1rem;
+      font-size: 0.8rem;
     }
   }
 }

@@ -3,8 +3,6 @@ import { NavHashLink } from 'react-router-hash-link';
 import { LOCALES } from "../i18n";
 import translate from "../i18n/translate";
 import Logo from "./Logo";
-import ButtonToggle from "./reusable-components/Button-toggle";
-
 
 function Navbar({ activeLangue, setActiveLangue }) {
   const ref = useRef(null)

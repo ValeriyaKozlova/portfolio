@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import { Switch, Route } from 'react-router-dom'
 import './styles/App.scss'
 import Home from './pages/Home'
@@ -8,9 +8,25 @@ import Navbar from './components/Navbar'
 import { I18nProvider, LOCALES } from './i18n'
 
 function App() {
-  const [activeLangue, setActiveLangue] = useState(localStorage.getItem('language') ||
-    LOCALES.ENGLISH)
+  const [activeLangue, setActiveLangue] = useState()
 
+  useEffect(() => {
+    if (localStorage.getItem('language')) {
+      setActiveLangue(localStorage.getItem('language'))
+    } else {
+      const lang = navigator.language
+      switch (lang.toLowerCase()) {
+        case 'ru-ru':
+          setActiveLangue(LOCALES.RUSSIAN)
+          break;
+        case 'fr-fr':
+          setActiveLangue(LOCALES.FRENCH)
+          break;
+        default:
+          setActiveLangue(LOCALES.ENGLISH)
+      }
+    }
+  }, [])
   return (
     <I18nProvider locale={activeLangue}>
       <Navbar

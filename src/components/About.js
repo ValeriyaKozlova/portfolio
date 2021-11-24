@@ -3,7 +3,6 @@ import translate from "../i18n/translate";
 
 const About = () => {
 
-  console.log(translate`message`)
   return (
     <section className="aboutContainer">
       <div className="container" id="about">

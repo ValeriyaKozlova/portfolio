@@ -10,6 +10,7 @@ import { I18nProvider, LOCALES } from './i18n'
 function App() {
   const [activeLangue, setActiveLangue] = useState(localStorage.getItem('language') ||
     LOCALES.ENGLISH)
+
   return (
     <I18nProvider locale={activeLangue}>
       <Navbar
@@ -18,10 +19,10 @@ function App() {
       />
       <Switch>
         <Route path="/cv-valeriya">
-          <CvValeriya />
+          <CvValeriya activeLangue={activeLangue} />
         </Route>
         <Route exact path="/">
-          <Home />
+          <Home activeLangue={activeLangue} />
         </Route>
         <Route path="*">
           <PageNotFound />

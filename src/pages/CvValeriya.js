@@ -2,7 +2,7 @@ import React, { useEffect } from 'react'
 import '../styles/pages/cv.scss'
 import translate from "../i18n/translate";
 
-export default function CvValeriya() {
+export default function CvValeriya({ activeLangue }) {
   useEffect(() => {
     window.scrollTo(0, 0);
   }, [])
@@ -207,7 +207,7 @@ export default function CvValeriya() {
         </div>
       </div>
       <div className="cv-download">
-        <a href="/images/myw3schoolsimage.jpg" download>
+        <a href={`Valeriya_Kozlova_Frontend_Developer_CV_${activeLangue}.pdf`} download>
           {translate("download")}
         </a>
       </div>

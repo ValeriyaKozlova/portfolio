@@ -2,7 +2,7 @@ import React from 'react'
 import { Link } from 'react-router-dom';
 import translate from "../i18n/translate";
 
-export default function Contacts() {
+export default function Contacts({ activeLangue }) {
   return (
     <section id="contacts">
       <div className="container">
@@ -13,7 +13,7 @@ export default function Contacts() {
           <Link to="/cv-valeriya">
             {translate("view-cv")}
           </Link>
-          <a href="/images/myw3schoolsimage.jpg" download>
+          <a href={`Valeriya_Kozlova_Frontend_Developer_CV_${activeLangue}.pdf`} download>
             {translate("download")}
           </a>
         </div>

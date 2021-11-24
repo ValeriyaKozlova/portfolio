@@ -7,7 +7,7 @@ import Footer from '../components/Footer'
 import GreetingArea from '../components/GreetingArea'
 import Contacts from '../components/Contacts'
 
-function Home() {
+function Home({ activeLangue }) {
   return (
     <>
       <main>
@@ -15,7 +15,7 @@ function Home() {
         <About />
         <Education />
         <Projects />
-        <Contacts />
+        <Contacts activeLangue={activeLangue} />
       </main>
       <Footer />
     </>

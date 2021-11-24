@@ -53,7 +53,8 @@ function Navbar({ activeLangue, setActiveLangue }) {
     <header ref={ref} className={mobileNavOpen ? 'blocked' : 'unBlocked'}>
       <nav className="navbar">
         <button onClick={() => handleOpenNav()} className="navbar-button" aria-label="Toggle navigation">
-          <span><ButtonToggle /></span>
+          <span className={mobileNavOpen ? "button-toggle-top open" : "button-toggle-top"}></span>
+          <span className={mobileNavOpen ? "button-toggle-bottom open" : "button-toggle-bottom"}></span>
         </button>
         <NavHashLink
           smooth

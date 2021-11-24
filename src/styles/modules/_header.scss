@@ -78,9 +78,35 @@ header {
       .navbar-button {
         display: inline-block;
         border: none;
-        text-align: left;
-        svg {
-          fill: $rose-color;
+        width: 40px;
+        height: 40px;
+        padding: 0;
+        position: relative;
+        .button-toggle-top,
+        .button-toggle-bottom {
+          position: absolute;
+          left: 5px;
+          width: 30px;
+          height: 2px;
+          background: $rose-color;
+          transition: all 0.2s;
+          &.open {
+            width: 20px;
+            left: 10px;
+            top: 20px;
+          }
+        }
+        .button-toggle-top {
+          top: calc(50% + 3px);
+          &.open {
+            transform: rotate(-45deg);
+          }
+        }
+        .button-toggle-bottom {
+          top: calc(50% - 3px);
+          &.open {
+            transform: rotate(45deg);
+          }
         }
       }
       padding-right: 10px;

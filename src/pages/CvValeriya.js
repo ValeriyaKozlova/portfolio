@@ -52,18 +52,18 @@ export default function CvValeriya({ activeLangue }) {
           <div className="row info-container">
             <div className="col-12 col-md-5 skills">
               <ul>
-                <li>JavaScript</li>
-                <li>TypeScript</li>
-                <li>Node.js</li>
-                <li>REST</li>
-                <li>GraphQL </li>
-              </ul>
-              <ul>
-                <li>ReactJS</li>
+                <li>React.js</li>
                 <li>React Router</li>
                 <li>Redux</li>
                 <li>Svelte</li>
                 <li>Next.js</li>
+              </ul>
+              <ul>
+                <li>Node.js</li>
+                <li>JavaScript</li>
+                <li>TypeScript</li>
+                <li>REST</li>
+                <li>GraphQL</li>
               </ul>
               <ul>
                 <li>HTML</li>
@@ -118,7 +118,7 @@ export default function CvValeriya({ activeLangue }) {
             </div>
             <div className="col-8">
               <p>{translate(`tourism-place`)}</p>
-              <p>{translate(`tourism-content`)}</p>
+              <p style={{whiteSpace: "pre-line"}}>{translate(`tourism-content`)}</p>
             </div>
           </div>
           <div className="row cv-experience" id="print-break">
@@ -130,7 +130,7 @@ export default function CvValeriya({ activeLangue }) {
             <div className="col-8">
               <h4>Aventica</h4>
               <p>{translate(`cv-post`)}</p>
-              <p>{translate(`description-aventica`)}</p>
+              <p style={{whiteSpace: "pre-line"}}>{translate(`description-aventica`)}</p>
   
             </div>
           </div>
@@ -142,7 +142,7 @@ export default function CvValeriya({ activeLangue }) {
             <div className="col-8">
               <h4>Korina.be</h4>
               <p>{translate(`cv-post`)}</p>
-              <p>{translate(`Korina`)}</p>
+              <p style={{whiteSpace: "pre-line"}}>{translate(`Korina`)}</p>
               <a
                 href='https://www.korina.be'
                 target="_blank"
@@ -158,7 +158,7 @@ export default function CvValeriya({ activeLangue }) {
             <div className="col-8">
               <h4>Blooming Riders</h4>
               <p>{translate(`cv-post`)}</p>
-              <p>{translate(`cv-Blooming-Riders`)}</p>
+              <p style={{whiteSpace: "pre-line"}}>{translate(`cv-Blooming-Riders`)}</p>
               <a
                 href='https://www.bloomingriders.com'
                 target="_blank"
@@ -174,7 +174,7 @@ export default function CvValeriya({ activeLangue }) {
             <div className="col-8">
               <h4>JobSwap</h4>
               <p>{translate(`cv-post`)}</p>
-              <p>{translate(`cv-JobSwap`)}</p>
+              <p style={{whiteSpace: "pre-line"}}>{translate(`cv-JobSwap`)}</p>
             </div>
             <div className="col-4">
               <p>{translate(`date-ANCUBATOR`)}</p>
@@ -183,7 +183,7 @@ export default function CvValeriya({ activeLangue }) {
             <div className="col-8">
               <h4>ANCUBATOR</h4>
               <p>{translate(`cv-post`)}</p>
-              <p>{translate(`cv-ANCUBATOR`)}</p>
+              <p style={{whiteSpace: "pre-line"}}>{translate(`cv-ANCUBATOR`)}</p>
             </div>
             <div className="col-4">
               <p>{translate(`date-becode`)}</p>
@@ -192,7 +192,7 @@ export default function CvValeriya({ activeLangue }) {
             <div className="col-8">
               <h4>A6K</h4>
               <p>{translate(`cv-post`)}</p>
-              <p>{translate(`A6K`)}</p>
+              <p style={{whiteSpace: "pre-line"}}>{translate(`A6K`)}</p>
               <a
                 href="https://www.a6k.be"
                 target="_blank"

@@ -77,6 +77,15 @@ const Education = () => {
               </div>
             </div>
             <div className="row">
+              <div className="col-12 col-md-6 offset-md-6 workContainer interact">
+                <h3>Aventica</h3>
+                <p>
+                  {translate("date-aventica")}, {translate("country-aventica")}
+                </p>
+                <p>{translate("description-aventica")}</p>
+              </div>
+            </div>
+            <div className="row">
               <div className="col-12 workContainer next interact">
                 <h3>What's next?..</h3>
               </div>

@@ -8,7 +8,7 @@ import ListOfLogosMobile from "./reusable-components/ListOfLogosMobile"
 import ListOfProjectsMobile from "./reusable-components/ListOfProjectsMobile"
 
 const Projects = () => {
-  const [project, setProject] = useState("Korina")
+  const [project, setProject] = useState("Tavrida")
   const [logoPosition, setLogoPosition] = useState("50px")
   const [logoMobilePosition, setLogoMobilePosition] = useState("0px")
   const [prev, setPrev] = useState("")
@@ -34,12 +34,15 @@ const Projects = () => {
     <section
       id="projects"
     >
-      <div className="clip"></div>
+      {/* <div className="clip"></div> */}
       <div className="container mainContainer">
         <div className="row projectContainer justify-content-center">
           <h2 className="col-12">
             {translate("heading-projects")}
           </h2>
+          <div className="col-12 buttons-mobile">
+            <ListOfProjectsMobile changeProject={changeProject} project={project} />
+          </div>
           {
             projects.map(pr => {
               if (pr.title === project) return <ProjectCard
@@ -51,23 +54,7 @@ const Projects = () => {
               />
             })
           }
-          <div className="col-12 buttons-mobile">
-            <ListOfProjectsMobile changeProject={changeProject} project={project} />
-          </div>
-          <div
-            className="col-12 col-lg-3 logos"
-            style={{
-              transform: `skewX(-15deg) translateY(${logoPosition})`,
-              color: "white",
-            }}
-          >
-            <ListOfLogos project={project} />
-          </div>
-          <div
-            className="col-12 col-lg-3 logos-mobile"
-          >
-            <ListOfLogosMobile project={project} logoMobilePosition={logoMobilePosition} />
-          </div>
+
           <div className="col-lg-1 buttons offset-lg-2">
             <ListOfProjects changeProject={changeProject} project={project} />
           </div>

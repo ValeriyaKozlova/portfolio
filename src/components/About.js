@@ -14,15 +14,16 @@ const About = () => {
           <div className="col-12 col-lg-6 skills">
             <ul>
               <li>JavaScript</li>
-              <li>TypeScript</li>
-              <li>Node.js</li>
               <li>REST</li>
               <li>GraphQL</li>
+              <li>TypeScript</li>
+              <li>Node.js</li>
             </ul>
             <ul>
               <li>ReactJS</li>
               <li>React Router</li>
               <li>Redux</li>
+              <li>Svelte</li>
               <li>Next.js</li>
             </ul>
             <ul>
@@ -35,6 +36,7 @@ const About = () => {
             <ul>
               <li>Git</li>
               <li>Figma</li>
+              <li>ClickUp</li>
             </ul>
           </div>
         </div>

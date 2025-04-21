@@ -62,6 +62,7 @@ export default function CvValeriya({ activeLangue }) {
                 <li>ReactJS</li>
                 <li>React Router</li>
                 <li>Redux</li>
+                <li>Svelte</li>
                 <li>Next.js</li>
               </ul>
               <ul>
@@ -74,6 +75,7 @@ export default function CvValeriya({ activeLangue }) {
               <ul>
                 <li>Git</li>
                 <li>Figma</li>
+                <li>ClickUp</li>
               </ul>
             </div>
 
@@ -122,6 +124,18 @@ export default function CvValeriya({ activeLangue }) {
           <div className="row cv-experience" id="print-break">
             <h3 className="col-12">{translate(`experience`)}</h3>
             <div className="col-4">
+              <p>{translate(`date-aventica`)}</p>
+              <p>{translate(`country-aventica`)}</p>
+            </div>
+            <div className="col-8">
+              <h4>Aventica</h4>
+              <p>{translate(`cv-post`)}</p>
+              <p>{translate(`description-aventica`)}</p>
+  
+            </div>
+          </div>
+          <div className="row cv-experience print-padding">
+          <div className="col-4">
               <p>{translate(`date-korina`)}</p>
               <p>{translate(`belgium`)}</p>
             </div>
@@ -137,8 +151,6 @@ export default function CvValeriya({ activeLangue }) {
                 {translate("button-visitSite")}
               </a>
             </div>
-          </div>
-          <div className="row cv-experience print-padding">
             <div className="col-4">
               <p>{translate(`date-blooming`)}</p>
               <p>{translate(`belgium`)}</p>
@@ -163,13 +175,6 @@ export default function CvValeriya({ activeLangue }) {
               <h4>JobSwap</h4>
               <p>{translate(`cv-post`)}</p>
               <p>{translate(`cv-JobSwap`)}</p>
-              <a
-                href="https://www.jobswap.be"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                {translate("button-visitSite")}
-              </a>
             </div>
             <div className="col-4">
               <p>{translate(`date-ANCUBATOR`)}</p>
@@ -179,13 +184,6 @@ export default function CvValeriya({ activeLangue }) {
               <h4>ANCUBATOR</h4>
               <p>{translate(`cv-post`)}</p>
               <p>{translate(`cv-ANCUBATOR`)}</p>
-              <a
-                href="https://www.ancubator.com"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                {translate("button-visitSite")}
-              </a>
             </div>
             <div className="col-4">
               <p>{translate(`date-becode`)}</p>

@@ -14,7 +14,7 @@
   .mainContainer {
     border-radius: 8px;
     .projectContainer {
-      height: 600px;
+      height: 755px;
       padding: 50px 0;
       overflow: hidden;
       .nextHeading {
@@ -72,7 +72,7 @@
       transition: all 0.3s;
       display: flex;
       flex-direction: column;
-      justify-content: space-around;
+      justify-content: flex-start;
       overflow: scroll;
       p {
         padding: 10px;
@@ -104,7 +104,7 @@
           justify-content: center;
           border: 1px solid $rose-dark;
           &:hover svg {
-            background: $background-color;
+            background: $rose-color;
           }
         }
       }
@@ -116,7 +116,7 @@
       background: $light-color;
     }
     .selected {
-      background: $rose-dark;
+      background: $rose-color;
     }
   }
 }
@@ -188,13 +188,12 @@
       .projectInfo {
         margin-top: 0px;
         margin-bottom: 20px;
-        min-height: 450px;
+        min-height: 0px;
         padding: 0;
         color: $light-color;
         transition: all 0.3s;
         display: flex;
         flex-direction: column;
-        justify-content: space-around;
         overflow: scroll;
         p {
           padding: 10px;
@@ -237,6 +236,16 @@
             }
           }
         }
+      }
+    }
+  }
+}
+
+@media (max-width: 767px) {
+  #projects {
+    .mainContainer {
+      .projectInfo {
+        min-height: 380px;
       }
     }
   }

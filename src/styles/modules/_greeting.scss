@@ -1,7 +1,7 @@
 @import '../variables/colors/_colors.scss';
 
 .greetingArea {
-  height: 100vh;
+  height: 800px;
   margin-top: -80px;
   position: relative;
   overflow: hidden;
@@ -57,6 +57,7 @@
 
 @media (max-width: 767px) {
   .greetingArea {
+  height: 100vh;
     margin-top: -80px;
     position: relative;
     overflow: hidden;

@@ -3,7 +3,7 @@ import { LOCALES } from "../locales";
 export default {
   [LOCALES.ENGLISH]: {
     "nav-about": "About",
-    "nav-exp": "Edu. && EX",
+    "nav-exp": "Edu. & EX",
     "nav-projects": "My projects",
     "contacts": "Contacts",
     "download": "Download my CV",
@@ -15,7 +15,7 @@ export default {
     "message": "I have a background and experience in the tourism industry, gained through internships abroad: six months in the United States in 2012 and six months in Turkey in 2013. However, after relocating to Belgium at the end of 2017, I chose to shift my career toward web development, a field I am truly passionate about.",
 "message-p1": "In March 2020, I completed a programming course at BeCode, followed by an internship at BloomingRiders. Since then, I have been working on my own project: an online store specializing in Korean cosmetics. At the same time, I remain open to new professional opportunities.",
 "message-p2":"I am particularly drawn to frontend development, a field I love and want to continue growing in. JavaScript and React.js are the technologies I use most often and truly enjoy.",
-    "heading-education": "Education && Experience",
+    "heading-education": "Education & Experience",
     "heading-projects": "Projects",
     "country": "Belgium",
     "country-city": "Charleroi, Belgium",

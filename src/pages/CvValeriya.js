@@ -41,6 +41,9 @@ export default function CvValeriya({ activeLangue }) {
                 </p>
                 <p>{translate(`cv-location`)}</p>
               </div>
+              {/* <div className="cv-contact">
+                <p>{translate(`cv-location`)}</p>
+              </div> */}
             </div>
             <div className="col-12 col-md-4">
               <div id="photo"></div>
@@ -79,7 +82,13 @@ export default function CvValeriya({ activeLangue }) {
               </ul>
             </div>
 
-            <div className="col-12 col-md-3">{translate(`cv-perso-skills`)}</div>
+            <div className="col-12 col-md-3">
+            {/* <p>{translate(`eng`)}</p>
+              <p>{translate(`fr`)}</p>
+              <p>{translate(`ru`)}</p> */}
+              {translate(`cv-perso-skills`)}
+
+            </div>
             <div className="col-12 col-md-4">
               <p>{translate(`eng`)}</p>
               <p>{translate(`fr`)}</p>

@@ -17,7 +17,7 @@ const GreetingArea = () => {
         <button>
           <NavHashLink
             scroll={el => scrollWithOffset(el)}
-            to="/#projects">
+            to="/portfolio/#projects">
             {translate("nav-projects")}
           </NavHashLink>
         </button>

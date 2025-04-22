@@ -37,7 +37,7 @@ function App() {
         <Route path="/cv-valeriya">
           <CvValeriya activeLangue={activeLangue} />
         </Route>
-        <Route exact path="/">
+        <Route exact path="/portfolio">
           <Home activeLangue={activeLangue} />
         </Route>
         <Route path="*">

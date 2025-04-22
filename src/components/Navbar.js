@@ -64,44 +64,44 @@ function Navbar({ activeLangue, setActiveLangue }) {
         <div className="navigation">
           <NavHashLink
             scroll={el => scrollWithOffset(el)}
-            to="/#about">
+            to="/portfolio/#about">
             {translate("nav-about")}
           </NavHashLink>
           <NavHashLink
             scroll={el => scrollWithOffset(el)}
-            to="/#education">
+            to="/portfolio/#education">
             {translate("nav-exp")}
           </NavHashLink>
           <NavHashLink
             scroll={el => scrollWithOffset(el)}
-            to="/#projects">
+            to="/portfolio/#projects">
             {translate("nav-projects")}
           </NavHashLink>
           <NavHashLink
             smooth
-            to="/#contacts">
+            to="/portfolio/#contacts">
             {translate("contacts")}
           </NavHashLink>
         </div>
         <div className={mobileNavOpen ? "mobile-navigation open" : "mobile-navigation closed"}>
           <NavHashLink
             scroll={el => scrollWithOffset(el)}
-            to="/#about">
+            to="/portfolio/#about">
             {translate("nav-about")}
           </NavHashLink>
           <NavHashLink
             scroll={el => scrollWithOffset(el)}
-            to="/#education">
+            to="/portfolio/#education">
             {translate("nav-exp")}
           </NavHashLink>
           <NavHashLink
             scroll={el => scrollWithOffset(el)}
-            to="/#projects">
+            to="/portfolio/#projects">
             {translate("nav-projects")}
           </NavHashLink>
           <NavHashLink
             scroll={el => scrollWithOffset(el)}
-            to="/#contacts">
+            to="/portfolio/#contacts">
             {translate("contacts")}
           </NavHashLink>
         </div>

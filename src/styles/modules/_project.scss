@@ -3,6 +3,7 @@
 #projects {
   padding: 0;
   position: relative;
+  height: 755px;
   .clip {
     position: absolute;
     width: 100%;
@@ -14,7 +15,6 @@
   .mainContainer {
     border-radius: 8px;
     .projectContainer {
-      height: 755px;
       padding: 50px 0;
       overflow: hidden;
       .nextHeading {
@@ -90,7 +90,7 @@
     }
     .buttons {
       display: flex;
-      align-items: center;
+      align-items: flex-start;
       height: 500px;
       .preview {
         button {

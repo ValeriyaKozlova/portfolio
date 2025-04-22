@@ -15,7 +15,7 @@ const About = () => {
           </div>
           <div className="col-12 col-lg-6 skills">
             <ul>
-              <li>ReactJS</li>
+              <li>React.js</li>
               <li>React Router</li>
               <li>Redux</li>
               <li>Svelte</li>

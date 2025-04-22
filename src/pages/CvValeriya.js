@@ -44,7 +44,7 @@ export default function CvValeriya({ activeLangue }) {
             </div>
             <div className="col-12 col-md-4">
               <div id="photo"></div>
-            </div>
+            </div> 
           </div>
           <div className="row info">
             <h3 className="col-12">{translate(`cv-skills`)}</h3>
@@ -108,11 +108,11 @@ export default function CvValeriya({ activeLangue }) {
               <p>{translate(`english-date`)}</p>
               <p>{translate(`english-ville`)}</p>
             </div>
-            <div className="col-8">
+            <div className="col-8 print-break">
               <p>{translate(`english-place`)}</p>
               <p>{translate(`english-content`)}</p>
             </div>
-            <div className="col-4">
+            <div className="col-4 ">
               <p>{translate(`tourism-date`)}</p>
               <p>{translate(`tourism-ville`)}</p>
             </div>
@@ -121,7 +121,7 @@ export default function CvValeriya({ activeLangue }) {
               <p style={{whiteSpace: "pre-line"}}>{translate(`tourism-content`)}</p>
             </div>
           </div>
-          <div className="row cv-experience" id="print-break">
+          <div className="row cv-experience">
             <h3 className="col-12">{translate(`experience`)}</h3>
             <div className="col-4">
               <p>{translate(`date-aventica`)}</p>
@@ -134,12 +134,12 @@ export default function CvValeriya({ activeLangue }) {
   
             </div>
           </div>
-          <div className="row cv-experience print-padding">
+          <div className="row cv-experience"> 
           <div className="col-4">
               <p>{translate(`date-korina`)}</p>
               <p>{translate(`belgium`)}</p>
             </div>
-            <div className="col-8">
+            <div className="col-8 print-break">
               <h4>Korina.be</h4>
               <p>{translate(`cv-post`)}</p>
               <p style={{whiteSpace: "pre-line"}}>{translate(`Korina`)}</p>
@@ -180,7 +180,7 @@ export default function CvValeriya({ activeLangue }) {
               <p>{translate(`date-ANCUBATOR`)}</p>
               <p>{translate(`belgium`)}</p>
             </div>
-            <div className="col-8">
+            <div className="col-8 print-break">
               <h4>ANCUBATOR</h4>
               <p>{translate(`cv-post`)}</p>
               <p style={{whiteSpace: "pre-line"}}>{translate(`cv-ANCUBATOR`)}</p>

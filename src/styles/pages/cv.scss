@@ -172,6 +172,9 @@
 }
 
 @media print {
+  .print-break {
+    break-after: page;
+  }
   .cv-container {
     #cv {
       padding: 25px;
@@ -185,9 +188,6 @@
       }
       .info-container {
         grid-template-columns: 4fr 2fr 3fr;
-      }
-      #print-break {
-        break-after: page;
       }
       .print-padding {
         padding-top: 50px;

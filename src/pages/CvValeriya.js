@@ -89,7 +89,7 @@ export default function CvValeriya({ activeLangue }) {
               {translate(`cv-perso-skills`)}
 
             </div>
-            <div className="col-12 col-md-4">
+            <div className="col-12 col-md-4 cv-languages">
               <p>{translate(`eng`)}</p>
               <p>{translate(`fr`)}</p>
               <p>{translate(`ru`)}</p>

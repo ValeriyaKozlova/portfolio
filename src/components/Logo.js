@@ -1,88 +1,31 @@
-import React from "react";
+import React from 'react'
 
 function Logo() {
   return (
-    <div className="logo-container">
+    <div className='logo-container'>
       <svg
-        xmlns="http://www.w3.org/2000/svg"
-        xmlnsXlink="http://www.w3.org/1999/xlink"
-        width="70px"
-        viewBox="0 0 100 100"
-        xmlSpace="preserve"
-        enableBackground="new 0 0 100 100"
-
+        width='70'
+        height='70'
+        viewBox='0 0 70 70'
+        fill='none'
+        xmlns='http://www.w3.org/2000/svg'
       >
+        <rect width='70' height='70' fill='none' />
         <path
-          id="open"
-          className="st0"
-          style={{ fill: "#ED0077" }}
-          d="M2.86,49.71l18-9.27v2.68L5.69,50.71v0.08l15.17,7.61v2.68l-18-9.27V49.71z"
+          d='M19.1631 20L27.458 43.0508C27.458 43.0508 32.7163 28.1113 33.3076 26.5029C33.8534 25.0182 34.8395 20.7342 34.9883 20.083L35.0175 20H38.8896C38.8857 20.0362 38.3442 24.9696 37.7822 26.5029C37.2181 28.0414 29.1465 50 29.1465 50H25.2715L13.9785 20H19.1631ZM56.1006 20L44.789 31.9717L57.1679 50H51.5898L41.665 35.2783L40.414 36.6289V50H36.8789V41.6084C36.8789 38.6014 36.9909 36.4634 37.1562 35.4541C37.3241 34.4294 37.8133 33.6251 38.2422 33.1924L38.3457 33.0859C39.6054 31.7876 46.8793 24.0125 50.5009 20H56.1006Z'
+          fill='#ED0077'
         />
         <path
-          id="close"
-          className="st0"
-          style={{ fill: "#ED0077" }}
-          d="M96.67,51.84l-18,9.24V58.4l15.29-7.61v-0.08l-15.29-7.61v-2.68l18,9.24V51.84z"
+          d='M1 34.6954L13.678 27.9059V29.8688L2.99326 35.4278V35.4864L13.678 41.06V43.0229L1 36.2335V34.6954Z'
+          fill='#ED0077'
         />
         <path
-          id="k"
-          className="st0"
-          style={{ fill: "#ED0077" }}
-          d="M54.44,47.67l20.32,26.8h-6.62L50.73,51.18"
-        />
-        <g id="k_x5F_shadow" className="st1" style={{ opacity: 0.19 }}>
-          <defs>
-            <path
-              id="SVGID_1_"
-              className="st1"
-              style={{ opacity: 0.19 }}
-              d="M54.44,47.67l20.32,26.8h-6.62L50.73,51.18"
-            />
-          </defs>
-          <clipPath id="SVGID_2_">
-            <use xlinkHref="#SVGID_1_" style={{ overflow: "visible" }} />
-          </clipPath>
-
-          <linearGradient
-            id="SVGID_3_"
-            gradientUnits="userSpaceOnUse"
-            x1="18.7738"
-            y1="130.3936"
-            x2="24.7921"
-            y2="130.3936"
-            gradientTransform="matrix(0.9271 0.3748 -0.3748 0.9271 86.0458 -72.9444)"
-          >
-            <stop
-              stopColor="#000000"
-              offset="0"
-            />
-            <stop
-              stopColor="#000000"
-              stopOpacity="0.5"
-              offset="0.2199"
-            />
-            <stop
-              stopColor="#000000"
-              stopOpacity="0"
-              offset="0.5675"
-            />
-          </linearGradient>
-          <polygon
-            className="st2"
-            points="58.36,62.04 53.95,56.53 56.5,50.22 62.8,52.77 	"
-            clipPath="url(#SVGID_2_)"
-            fill="url(#SVGID_3_)"
-          />
-        </g>
-        <path
-          id="v"
-          className="st0"
-          style={{ fill: "#ED0077" }}
-          d="M28.45,26.55l15.86,40.3l15.8-40.3h6.41L46.94,74.47h-5.27L22.04,26.55H28.45z"
+          d='M69 36.262L56.322 43.0229V41.0619L67.0913 35.4937V35.4352L56.322 29.8669V27.9059L69 34.6669V36.262Z'
+          fill='#ED0077'
         />
       </svg>
     </div>
-  );
+  )
 }
 
-export default Logo;
+export default Logo

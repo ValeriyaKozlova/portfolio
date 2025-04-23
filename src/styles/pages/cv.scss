@@ -56,9 +56,19 @@
       }
       .cv-contact {
         display: flex;
-        justify-content: space-around;
+        justify-content: center;
+        flex-direction: column;
+        p {
+          text-align: center;
+        }
         a {
           color: $rose-dark;
+        }
+
+        @media (min-width: 993px) {
+          flex-direction: row;
+        justify-content: space-around;
+
         }
       }
     }
@@ -125,8 +135,16 @@
     }
   }
 }
+.cv-languages {
+  margin-top: 0;
+}
+
 
 @media (max-width: 767px) {
+  .cv-languages {
+    margin-top: 20px;
+  }
+
   .cv-container {
     #cv {
       padding-top: 100px;

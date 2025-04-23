@@ -15,11 +15,14 @@ function App() {
       setActiveLangue(localStorage.getItem('language'))
     } else {
       const lang = navigator.language
+      console.log({navigator})
+      console.log({lang})
+      console.log({lang: lang.toLowerCase()})
       switch (lang.toLowerCase()) {
-        case 'ru-ru':
+        case 'ru':
           setActiveLangue(LOCALES.RUSSIAN)
           break;
-        case 'fr-fr':
+        case 'fr':
           setActiveLangue(LOCALES.FRENCH)
           break;
         default:

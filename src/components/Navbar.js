@@ -56,7 +56,7 @@ function Navbar({ activeLangue, setActiveLangue }) {
         </button>
         <NavHashLink
           smooth
-          to="/#"
+          to="/portfolio"
           aria-label="Home page"
         >
           <Logo />
